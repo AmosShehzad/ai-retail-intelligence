@@ -1,14 +1,26 @@
 import sqlite3
 import os
-from dotenv import load_dotenv
+from pathlib import Path
 
-load_dotenv()
+try:
+    from dotenv import load_dotenv
+except ImportError:
+    load_dotenv = None
 
-DB_PATH = os.getenv("DB_PATH", "database/retail.db")
+if load_dotenv is not None:
+    load_dotenv()
+
+_DEFAULT_DB_PATH = Path(__file__).resolve().parent / "retail.db"
+_ENV_DB_PATH = os.getenv("DB_PATH")
+DB_PATH = Path(_ENV_DB_PATH).expanduser() if _ENV_DB_PATH else _DEFAULT_DB_PATH
+
+if not DB_PATH.is_absolute():
+    DB_PATH = (Path(__file__).resolve().parent / DB_PATH).resolve()
 
 
 def get_connection():
     """Returns a connection to the SQLite database."""
+    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row  # lets you access columns by name
     return conn
