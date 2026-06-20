@@ -7,3 +7,4 @@ data/raw/
 data/processed/
 faiss_index/
 .langsmith
+faiss_index/
