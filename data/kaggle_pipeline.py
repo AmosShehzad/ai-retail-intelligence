@@ -91,15 +91,28 @@ def save_processed(df: pd.DataFrame) -> None:
 
 def load_into_database(df: pd.DataFrame) -> None:
     import database.db_manager as db_manager
-
     db_manager = importlib.reload(db_manager)
     db_manager.initialize_database()
 
-    conn = db_manager.get_connection()
+    conn   = db_manager.get_connection()
     cursor = conn.cursor()
 
+    # ── IDEMPOTENCY GUARD ──────────────────────────────────────────
+    # Load ALL existing (product_id, quantity, sale_date) combos
+    # into a set ONCE before the loop.
+    # Before inserting any sale, check against this set.
+    # This prevents duplicate sales no matter how many times
+    # the pipeline is re-run.
+    cursor.execute("SELECT product_id, quantity, sale_date FROM sales")
+    existing_sales = {
+        (row[0], row[1], str(row[2]))
+        for row in cursor.fetchall()
+    }
+    # ──────────────────────────────────────────────────────────────
+
     inserted_products = 0
-    inserted_sales = 0
+    inserted_sales    = 0
+    skipped_sales     = 0
 
     for _, row in df.iterrows():
         cursor.execute(
@@ -110,11 +123,9 @@ def load_into_database(df: pd.DataFrame) -> None:
 
         if result is None:
             cursor.execute(
-                """
-                INSERT INTO products
-                (product_name, category, cost_price, selling_price, stock)
-                VALUES (?, ?, ?, ?, ?)
-                """,
+                """INSERT INTO products
+                   (product_name, category, cost_price, selling_price, stock)
+                   VALUES (?, ?, ?, ?, ?)""",
                 (
                     row["product_name"],
                     row["category"],
@@ -128,16 +139,25 @@ def load_into_database(df: pd.DataFrame) -> None:
         else:
             product_id = result[0]
 
+        # Check before inserting sale
+        sale_key = (product_id, int(row["quantity"]), str(row["sale_date"]))
+        if sale_key in existing_sales:
+            skipped_sales += 1
+            continue
+
         cursor.execute(
             "INSERT INTO sales (product_id, quantity, sale_date) VALUES (?, ?, ?)",
             (product_id, int(row["quantity"]), str(row["sale_date"])),
         )
+        existing_sales.add(sale_key)  # add to set so loop stays consistent
         inserted_sales += 1
 
     conn.commit()
     conn.close()
-    log.info("DB insert complete: %s new products, %s sales", inserted_products, inserted_sales)
-
+    log.info(
+        "DB insert complete: %s new products, %s sales inserted, %s skipped (duplicates)",
+        inserted_products, inserted_sales, skipped_sales
+    )
 
 def run_pipeline(load_db: bool = True) -> pd.DataFrame:
     log.info("%s", "=" * 50)

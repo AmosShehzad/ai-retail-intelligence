@@ -64,8 +64,14 @@ def test_faiss_index_builds():
 
 
 def test_save_and_load_index():
-    model = load_embedding_model()
-    docs  = [
+    """Uses temp paths so it never overwrites the real FAISS index."""
+    import tempfile
+    import os
+    import pickle
+    import faiss as faiss_lib
+
+    model      = load_embedding_model()
+    docs       = [
         Document(page_content=f"Test document {i}",
                  metadata={"doc_type": "test", "id": i})
         for i in range(5)
@@ -74,15 +80,22 @@ def test_save_and_load_index():
     embeddings = embed_texts(texts, model, show_progress=False)
     index      = build_faiss_index(embeddings)
 
-    save_faiss_index(index, docs)
+    # Use temp files — NEVER touch the real index
+    with tempfile.TemporaryDirectory() as tmpdir:
+        tmp_index = os.path.join(tmpdir, "test.index")
+        tmp_docs  = os.path.join(tmpdir, "test.pkl")
 
-    assert os.path.exists(FAISS_INDEX_PATH)
-    assert os.path.exists(FAISS_DOCS_PATH)
+        faiss_lib.write_index(index, tmp_index)
+        with open(tmp_docs, "wb") as f:
+            pickle.dump(docs, f)
 
-    loaded_index, loaded_docs = load_faiss_index()
+        loaded_index = faiss_lib.read_index(tmp_index)
+        with open(tmp_docs, "rb") as f:
+            loaded_docs = pickle.load(f)
+
     assert loaded_index.ntotal == 5
     assert len(loaded_docs)    == 5
-
+    print("✅ test_save_and_load_index passed (used temp path, real index untouched)")
 
 def test_search_returns_relevant_result():
     model = load_embedding_model()

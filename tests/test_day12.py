@@ -61,12 +61,17 @@ def test_analytics_documents_structure():
     assert "kpi_overview" in types
 
 
-def test_full_synthesis_and_save():
-    docs = run_document_synthesis(save_to_disk=True)
+def test_full_synthesis_no_save():
+    """
+    Runs synthesis in memory only.
+    save_to_disk=False means synthesized_documents.json is never
+    overwritten with potentially empty test data.
+    """
+    docs = run_document_synthesis(save_to_disk=False)
     assert len(docs) > 0
-
-    import os
-    assert os.path.exists("data/processed/synthesized_documents.json")
+    assert any(d.metadata.get("doc_type") == "product" for d in docs)
+    assert any(d.metadata.get("doc_type") == "inventory_alert" for d in docs)
+    print(f"✅ test_full_synthesis_no_save passed | {len(docs)} docs generated")
 
 
 def test_load_from_disk():
