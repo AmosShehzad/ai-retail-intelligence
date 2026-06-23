@@ -77,25 +77,18 @@ async def ask_question(body: RAGQueryRequest):
 
 @router.get("/status")
 async def rag_status():
-    """Checks if Ollama is reachable."""
-    try:
-        import httpx
-        async with httpx.AsyncClient() as client:
-            r = await client.get("http://localhost:11434/api/tags", timeout=3)
-            models = [m["name"] for m in r.json().get("models", [])]
-            phi3_ready = any("phi3" in m for m in models)
+    """
+    Uses Day 15's LlamaService for accurate readiness reporting.
+    """
+    from rag.llama_service import get_llama_service
 
-        return {
-            "status"       : "online" if phi3_ready else "model_missing",
-            "ollama"       : "connected",
-            "phi3_ready" : phi3_ready,
-            "available"    : phi3_ready,
-            "models"       : models,
-        }
-    except Exception as e:
-        return {
-            "status"   : "offline",
-            "ollama"   : "not reachable",
-            "available": False,
-            "error"    : str(e),
-        }
+    service = get_llama_service()
+
+    return {
+        "status"      : "online" if service.is_ready() else "offline",
+        "available"   : service.is_ready(),
+        "model"       : service.config.model_name,
+        "timeout_sec" : service.config.timeout_seconds,
+        "max_tokens"  : service.config.max_tokens,
+        "connection"  : service.connection_status,
+    }
