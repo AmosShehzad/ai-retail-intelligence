@@ -1,12 +1,11 @@
 """
-Day 11 update: RAG router now calls real LangChain chains.
-No more placeholder response.
+Day 16 update: RAG router now uses the COMPLETE pipeline.
+This replaces the Day 11 placeholder logic entirely.
 """
 
 import logging
-import json
 from fastapi import APIRouter, HTTPException
-from api.schemas.rag import RAGQueryRequest, RAGQueryResponse
+from api.schemas.rag import RAGQueryRequest, RAGQueryResponse, SourceDocument
 
 log    = logging.getLogger(__name__)
 router = APIRouter(prefix="/rag", tags=["RAG Assistant"])
@@ -15,80 +14,57 @@ router = APIRouter(prefix="/rag", tags=["RAG Assistant"])
 @router.post("/ask", response_model=RAGQueryResponse)
 async def ask_question(body: RAGQueryRequest):
     """
-    Routes question to correct LangChain chain.
-    Injects relevant store data as context.
-    Returns AI-generated answer grounded in your data.
+    THE MAIN RAG ENDPOINT — full pipeline from Day 16.
+
+    Flow: question → retriever → context → prompt → Ollama →
+    hallucination check → structured answer with sources.
     """
     try:
-        from rag.chains import get_routed_chain, route_question
-        from analytics.engines import get_store_kpis, get_category_margins
-        from analytics.inventory import (
-            get_inventory_health_summary,
-            get_low_stock_alerts,
-        )
+        from rag.pipeline import get_rag_pipeline
 
-        question = body.question
-        route    = route_question(question)
-        chain, _ = get_routed_chain(question)
+        pipeline = get_rag_pipeline()
+        result   = await pipeline.aanswer(body.question)
 
-        # Build context based on route
-        # Why: inject only relevant data to keep prompt focused
-        if route == "analytics":
-            store_context = json.dumps(get_store_kpis(), indent=2)
-            answer = await chain.ainvoke({
-                "store_context": store_context,
-                "question"     : question,
-            })
+        if not result.success:
+            raise HTTPException(status_code=503, detail=result.error)
 
-        elif route == "inventory":
-            inventory_context = json.dumps(
-                get_inventory_health_summary(), indent=2
-            )
-            alerts_df         = get_low_stock_alerts()
-            alerts_context    = alerts_df.head(10).to_string(index=False) \
-                                if not alerts_df.empty \
-                                else "No low stock alerts currently."
-
-            answer = await chain.ainvoke({
-                "inventory_context": inventory_context,
-                "alerts_context"   : alerts_context,
-                "question"         : question,
-            })
-
-        else:
-            answer = await chain.ainvoke({"question": question})
-
-        # Log query to database for audit
+        # Log query to database for audit (from Day 2's schema)
         from database.queries import log_query
-        log_query(question, answer)
+        log_query(body.question, result.answer)
 
         return RAGQueryResponse(
             success  = True,
-            question = question,
-            answer   = answer,
-            sources  = [],          # FAISS sources added Day 16
+            question = result.question,
+            answer   = result.answer,
+            sources  = [
+                SourceDocument(
+                    content     = s["preview"],
+                    score       = s["score"],
+                    product_name= s.get("product_name"),
+                    category    = s.get("category"),
+                )
+                for s in result.sources
+            ],
             model    = "phi3",
         )
 
+    except HTTPException:
+        raise
     except Exception as e:
-        log.exception("RAG chain failed for question: %s", body.question)
+        log.exception("RAG endpoint failed for question: %s", body.question)
         raise HTTPException(status_code=500, detail=str(e))
 
 
 @router.get("/status")
 async def rag_status():
-    """
-    Uses Day 15's LlamaService for accurate readiness reporting.
-    """
-    from rag.llama_service import get_llama_service
+    """Reports full pipeline readiness — retriever AND LLM."""
+    from rag.pipeline import get_rag_pipeline
 
-    service = get_llama_service()
+    pipeline = get_rag_pipeline()
 
     return {
-        "status"      : "online" if service.is_ready() else "offline",
-        "available"   : service.is_ready(),
-        "model"       : service.config.model_name,
-        "timeout_sec" : service.config.timeout_seconds,
-        "max_tokens"  : service.config.max_tokens,
-        "connection"  : service.connection_status,
+        "status"           : "online" if pipeline.is_ready() else "offline",
+        "available"        : pipeline.is_ready(),
+        "documents_indexed": len(pipeline.retriever.documents),
+        "llama_ready"      : pipeline.llama.is_ready(),
     }

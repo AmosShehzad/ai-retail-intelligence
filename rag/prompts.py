@@ -48,7 +48,7 @@ def get_base_prompt() -> ChatPromptTemplate:
     {question} is the placeholder LangChain fills at runtime.
     
     ChatPromptTemplate uses message roles (system/human/assistant)
-    which maps to how chat models like Llama3 expect input.
+    which maps to how chat models like phi3 expect input.
     """
     return ChatPromptTemplate.from_messages([
         ("system", RETAIL_ASSISTANT_PERSONA),
@@ -66,8 +66,8 @@ def get_analytics_prompt() -> ChatPromptTemplate:
     {question}      = user's question
     
     Why inject context in the prompt:
-    Llama3 doesn't have access to your DB. You pass the data
-    as text in the prompt, and Llama3 reasons over it.
+    phi3 doesn't have access to your DB. You pass the data
+    as text in the prompt, and phi3 reasons over it.
     This is "context-stuffing" — simpler than RAG but limited
     to how much data fits in the context window (~4000 tokens).
     """
@@ -132,28 +132,23 @@ def get_rag_prompt() -> ChatPromptTemplate:
     {question} = user's question
     
     The instruction "ONLY use the context below" is critical.
-    Without it, Llama3 mixes retrieved facts with its training
+    Without it, phi3 mixes retrieved facts with its training
     data and hallucinates. This instruction is your
     hallucination prevention mechanism.
     
     This prompt is built today but fully activated Day 16
     when FAISS retrieval is wired in.
     """
-    template = """You are an AI Retail Intelligence Assistant for a Pakistani kiryana store.
+    template = """You are a retail assistant for a Pakistani kiryana store.
 
-RETRIEVED STORE DATA (use ONLY this to answer):
+STORE DATA:
 {context}
 
-RULES:
-1. Answer ONLY based on the context above
-2. If the context doesn't contain the answer, say: "I don't have that information in the store data."
-3. Be specific — mention product names, prices in PKR, quantities
-4. If recommending action, explain why based on the data
-5. Keep answer under 150 words
+Rules: Answer ONLY from the data above. If not found, say "I don't have that information."
+Be brief — max 3 sentences. Mention product names and PKR prices.
 
-QUESTION: {question}
-
-ANSWER:"""
+Question: {question}
+Answer:"""
 
     return ChatPromptTemplate.from_messages([
         ("system", RETAIL_ASSISTANT_PERSONA),

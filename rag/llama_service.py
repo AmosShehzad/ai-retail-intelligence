@@ -69,17 +69,17 @@ class LlamaConfig:
     # 1 token ≈ 0.75 words in English
     # 400 tokens ≈ 300 words ≈ a focused 3-4 sentence business answer
     # Prevents phi3 from writing essays when the owner needs a quick answer
-    max_tokens: int = 400
+    max_tokens: int = 256
 
     # TIMEOUT: max seconds to wait for Ollama to respond
     # Without this, a hung request blocks your FastAPI endpoint forever
-    # 30s is generous for local CPU inference of phi3 (8B params)
-    timeout_seconds: int = 30
+    # 180s is generous for local CPU inference of phi3 (8B params)
+    timeout_seconds: int = 180
 
     # RETRY COUNT: how many times to retry a failed/empty call
     # Local LLMs occasionally return empty strings due to sampling
     # quirks — one retry usually fixes it without real cost (no API fees)
-    max_retries: int = 2
+    max_retries: int = 1
 
     # MIN RESPONSE LENGTH: minimum characters to consider a response valid
     # Catches cases where Ollama returns "" or just whitespace

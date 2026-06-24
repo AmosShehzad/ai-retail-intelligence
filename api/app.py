@@ -36,33 +36,25 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 
-# ── Lifespan (startup + shutdown) ─────────────────────────────────────────────
+# In api/app.py, update the lifespan function:
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    """
-    Runs setup code ONCE when server starts,
-    and cleanup code ONCE when server shuts down.
-    
-    Why not @app.on_event("startup"):
-    That's the old way — lifespan is the modern FastAPI approach.
-    
-    What we do on startup:
-    - Initialize SQLite tables (safe — uses CREATE IF NOT EXISTS)
-    - Log that server is ready
-    """
-    log.info("=" * 55)
     log.info("AI Retail Intelligence API — Starting Up")
-    log.info("=" * 55)
-
-    # Ensure DB tables exist before any request comes in
     initialize_database()
     log.info("Database initialized and ready.")
 
-    yield  # Server runs here — handles all requests between startup and shutdown
+    # Day 16: pre-warm the RAG pipeline at startup
+    # Why: loading FAISS + connecting to Ollama takes a few seconds.
+    # Doing it now means the FIRST user request isn't slow —
+    # the pipeline is already loaded and ready by the time anyone asks.
+    from rag.pipeline import get_rag_pipeline
+    pipeline = get_rag_pipeline()
+    log.info("RAG Pipeline pre-warmed | ready=%s", pipeline.is_ready())
 
-    # Shutdown
+    yield
+
     log.info("AI Retail Intelligence API — Shutting Down")
-
 
 # ── App factory ───────────────────────────────────────────────────────────────
 def create_app() -> FastAPI:
