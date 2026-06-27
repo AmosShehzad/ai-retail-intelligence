@@ -24,6 +24,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
+from api.routers import analytics, inventory, rag, products, purchase_orders
+
 from database.db_manager import initialize_database
 from api.error_handlers import register_error_handlers
 from api.routers import analytics, inventory, rag
@@ -117,7 +119,8 @@ def create_app() -> FastAPI:
     app.include_router(analytics.router, prefix="/api/v1")
     app.include_router(inventory.router, prefix="/api/v1")
     app.include_router(rag.router,       prefix="/api/v1")
-
+    app.include_router(products.router,        prefix="/api/v1")
+    app.include_router(purchase_orders.router, prefix="/api/v1")
     # ── Root health check ─────────────────────────────────────────────────────
     @app.get("/", tags=["Health"])
     async def root():
