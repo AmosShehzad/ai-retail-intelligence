@@ -7,7 +7,7 @@ except ImportError:
 
 
 def get_top_selling_products(limit=10):
-    """Returns products ranked by total quantity sold."""
+    """Returns active products ranked by total quantity sold."""
     conn = get_connection()
     cursor = conn.cursor()
     cursor.execute("""
@@ -15,9 +15,10 @@ def get_top_selling_products(limit=10):
             p.product_name,
             p.category,
             SUM(s.quantity) AS total_sold,
-            ROUND(SUM(s.quantity * p.selling_price), 2) AS total_revenue
+            ROUND(SUM(s.quantity * s.sale_price), 2) AS total_revenue
         FROM sales s
         JOIN products p ON s.product_id = p.product_id
+        WHERE p.is_active = 1
         GROUP BY p.product_id
         ORDER BY total_sold DESC
         LIMIT ?
@@ -28,13 +29,13 @@ def get_top_selling_products(limit=10):
 
 
 def get_low_stock_products(threshold=20):
-    """Returns products with stock below the given threshold."""
+    """Returns active products with stock below the given threshold."""
     conn = get_connection()
     cursor = conn.cursor()
     cursor.execute("""
         SELECT product_name, category, stock, supplier
         FROM products
-        WHERE stock <= ?
+        WHERE stock <= ? AND is_active = 1
         ORDER BY stock ASC
     """, (threshold,))
     rows = cursor.fetchall()
@@ -43,17 +44,20 @@ def get_low_stock_products(threshold=20):
 
 
 def get_profit_margins():
-    """Returns each product with its profit margin percentage."""
+    """Returns each active product with its profit margin percentage based on actual sales data."""
     conn = get_connection()
     cursor = conn.cursor()
     cursor.execute("""
         SELECT 
-            product_name,
-            category,
-            cost_price,
-            selling_price,
-            ROUND((selling_price - cost_price) * 100.0 / cost_price, 2) AS margin_pct
-        FROM products
+            p.product_name,
+            p.category,
+            p.cost_price,
+            s.sale_price,
+            ROUND((s.sale_price - p.cost_price) * 100.0 / p.cost_price, 2) AS margin_pct
+        FROM sales s
+        JOIN products p ON s.product_id = p.product_id
+        WHERE p.is_active = 1
+        GROUP BY p.product_id, s.sale_price
         ORDER BY margin_pct DESC
     """)
     rows = cursor.fetchall()
@@ -62,16 +66,16 @@ def get_profit_margins():
 
 
 def get_daily_revenue(days=30):
-    """Returns daily revenue for the last N days."""
+    """Returns daily revenue from active products for the last N days."""
     conn = get_connection()
     cursor = conn.cursor()
     cursor.execute("""
         SELECT 
             s.sale_date,
-            ROUND(SUM(s.quantity * p.selling_price), 2) AS daily_revenue
+            ROUND(SUM(s.quantity * s.sale_price), 2) AS daily_revenue
         FROM sales s
         JOIN products p ON s.product_id = p.product_id
-        WHERE s.sale_date >= DATE('now', ? || ' days')
+        WHERE s.sale_date >= DATE('now', ? || ' days') AND p.is_active = 1
         GROUP BY s.sale_date
         ORDER BY s.sale_date ASC
     """, (f"-{days}",))

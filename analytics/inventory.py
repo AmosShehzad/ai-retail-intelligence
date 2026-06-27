@@ -47,22 +47,24 @@ def _load_inventory_base(days_window: int = 30) -> pd.DataFrame:
     cutoff_date = (datetime.now() - timedelta(days=days_window)).strftime("%Y-%m-%d")
 
     df = pd.read_sql_query("""
-        SELECT
-            p.product_id,
-            p.product_name,
-            p.category,
-            p.stock          AS current_stock,
-            p.cost_price,
-            p.selling_price,
-            p.supplier,
-            COALESCE(SUM(s.quantity), 0)                    AS units_sold,
-            COALESCE(SUM(s.quantity * p.selling_price), 0)  AS revenue
-        FROM products p
-        LEFT JOIN sales s
-            ON p.product_id = s.product_id
-            AND s.sale_date >= ?
-        GROUP BY p.product_id
-    """, conn, params=(cutoff_date,))
+    SELECT
+        p.product_id,
+        p.product_name,
+        p.category,
+        p.stock          AS current_stock,
+        p.cost_price,
+        p.selling_price,
+        p.supplier,
+        p.low_stock_threshold,
+        COALESCE(SUM(s.quantity), 0)                   AS units_sold,
+        COALESCE(SUM(s.quantity * p.selling_price), 0) AS revenue
+    FROM products p
+    LEFT JOIN sales s
+        ON p.product_id = s.product_id
+        AND s.sale_date >= ?
+    WHERE p.is_active = 1
+    GROUP BY p.product_id
+""", conn, params=(cutoff_date,))
 
     conn.close()
 
@@ -159,7 +161,7 @@ def get_low_stock_alerts(
     selling = df[df["daily_velocity"] > 0].copy()
 
     velocity_alert  = selling["days_of_stock_remaining"] <= alert_days_threshold
-    absolute_alert  = selling["current_stock"] <= absolute_low_threshold
+    absolute_alert = selling["current_stock"] <= selling["low_stock_threshold"]
     low_stock       = selling[velocity_alert | absolute_alert].copy()
 
     def assign_urgency(row):

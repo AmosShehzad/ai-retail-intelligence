@@ -19,24 +19,31 @@ log = logging.getLogger(__name__)
 
 
 def _load_sales_with_products() -> pd.DataFrame:
-    """
-    Loads sales joined with products into one DataFrame.
-    Every function below reuses this — single source of truth.
-    """
     conn = get_connection()
     df = pd.read_sql_query("""
-        SELECT 
-            s.sale_id, s.product_id, s.quantity, s.sale_date,
-            p.product_name, p.category, p.cost_price, p.selling_price
+        SELECT
+            s.sale_id,
+            s.product_id,
+            s.quantity,
+            s.sale_date,
+            s.sale_price,
+            p.product_name,
+            p.category,
+            p.cost_price,
+            p.selling_price
         FROM sales s
         JOIN products p ON s.product_id = p.product_id
+        WHERE p.is_active = 1
     """, conn)
     conn.close()
 
     df["sale_date"] = pd.to_datetime(df["sale_date"])
-    df["revenue"]   = df["quantity"] * df["selling_price"]
-    df["cost"]      = df["quantity"] * df["cost_price"]
-    df["profit"]    = df["revenue"] - df["cost"]
+
+    # Use sale_price (historical) not selling_price (current)
+    # This ensures revenue doesn't change if you update a product's price
+    df["revenue"] = df["quantity"] * df["sale_price"]
+    df["cost"]    = df["quantity"] * df["cost_price"]
+    df["profit"]  = df["revenue"] - df["cost"]
     return df
 
 # ── 1. Periodic Sales Totals ──────────────────────────────────────────────────
@@ -126,7 +133,14 @@ def get_store_kpis() -> dict:
 
     conn = get_connection()
     cursor = conn.cursor()
-    cursor.execute("SELECT COUNT(*), SUM(stock), SUM(stock * selling_price) FROM products")
+    cursor.execute("""
+    SELECT
+        COUNT(*),
+        SUM(stock),
+        SUM(stock * selling_price)
+    FROM products
+    WHERE is_active = 1
+    """)
     product_count, total_stock_units, inventory_value = cursor.fetchone()
     conn.close()
 
