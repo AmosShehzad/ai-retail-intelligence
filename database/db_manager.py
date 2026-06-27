@@ -88,3 +88,9 @@ def initialize_database():
 
 if __name__ == "__main__":
     initialize_database()
+print("=" * 60)
+print("__file__       :", __file__)
+print("_ENV_DB_PATH   :", _ENV_DB_PATH)
+print("Resolved DBPATH:", DB_PATH)
+print("Parent Folder  :", DB_PATH.parent)
+print("=" * 60)
