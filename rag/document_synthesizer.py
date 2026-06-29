@@ -426,10 +426,11 @@ def synthesize_analytics_documents() -> List[Document]:
     """
     Creates documents from store-level analytics summaries.
 
-    Three analytics documents:
+    Analytics documents include:
     1. Overall store KPI summary
-    2. Weekly revenue trend
-    3. Monthly performance overview
+    2. Purchase orders history/spend tracking
+    3. Weekly revenue trend
+    4. Monthly performance overview
 
     Why: When the owner asks "How is my business doing this month?"
     the RAG system retrieves these documents. They contain
@@ -470,7 +471,33 @@ Business Health: {_generate_store_health_insight(kpis)}"""
         }
     ))
 
-    # ── Document 2: Weekly Revenue Trend ──────────────────────────────────
+    # ── Document 2: Purchase Orders Summary ───────────────────────────────
+    conn = get_connection()
+    cursor = conn.cursor()
+    cursor.execute("""
+        SELECT COUNT(*) as total,
+               SUM(CASE WHEN status='pending' THEN 1 ELSE 0 END) as pending,
+               SUM(CASE WHEN status='received' THEN 1 ELSE 0 END) as received,
+               SUM(total_cost) as total_spent
+        FROM purchase_orders
+    """)
+    po_stats = cursor.fetchone()
+    conn.close()
+
+    if po_stats and po_stats["total"] is not None and po_stats["total"] > 0:
+        po_text = f"""Purchase Order Summary
+Total orders placed: {po_stats['total']}
+Pending delivery: {po_stats['pending']}
+Received: {po_stats['received']}
+Total procurement spend: {_fmt_price(po_stats['total_spent'] or 0)}
+Use this information to answer questions about orders, purchasing history, and supplier relationships."""
+        
+        documents.append(Document(
+            page_content=po_text,
+            metadata={"doc_type": "store_analytics", "analytics_type": "purchase_orders"}
+        ))
+
+    # ── Document 3: Weekly Revenue Trend ──────────────────────────────────
     weekly_df = get_revenue_by_period("W")
 
     if not weekly_df.empty:
@@ -516,7 +543,7 @@ and reflects actual transaction records."""
             }
         ))
 
-    # ── Document 3: Category Performance Summary ──────────────────────────
+    # ── Document 4: Category Performance Summary ──────────────────────────
     cat_df = get_category_margins()
 
     if not cat_df.empty:
