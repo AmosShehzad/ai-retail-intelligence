@@ -5,6 +5,7 @@ Three pages:
 1. Store Overview    — KPI cards + revenue chart + category breakdown
 2. Inventory Intel   — dead stock + low stock alerts + restock list
 3. AI Assistant      — RAG-powered chat with source citations
+4. Manage Store      — Search, filter, add products, adjust stock, and manage purchase orders
 
 Connects to:
 - FastAPI backend (Days 8-10) for analytics/inventory data
@@ -1020,6 +1021,266 @@ def page_ai_assistant():
 
 
 # ══════════════════════════════════════════════════════════════════════════════
+# PAGE 4: MANAGE STORE
+# ══════════════════════════════════════════════════════════════════════════════
+
+def page_manage_store():
+    st.markdown('<div class="section-header">🏪 Manage Store</div>',
+                unsafe_allow_html=True)
+    tab1, tab2 = st.tabs(["📦 Products", "🛒 Purchase Orders"])
+
+    # ── Tab 1: Products ───────────────────────────────────────────────────
+    with tab1:
+        st.markdown("**Search & Filter Products**")
+        col_search, col_cat, col_low = st.columns([2, 1, 1])
+
+        with col_search:
+            search_term = st.text_input("Search by name", placeholder="e.g. Tapal")
+        with col_cat:
+            cats = ["All", "Tea & Beverages", "Spices & Masala", "Dairy",
+                    "Cooking Oil", "Detergents", "Personal Care",
+                    "Instant Food", "Snacks", "Beverages", "Condiments"]
+            selected_cat = st.selectbox("Category", cats)
+        with col_low:
+            show_low = st.checkbox("Low stock only")
+
+        # Load filtered products
+        from database.db_manager import get_connection
+        import pandas as pd
+
+        conn = get_connection()
+        query = """
+            SELECT product_id, product_name, category, cost_price,
+                   selling_price, stock, low_stock_threshold,
+                   supplier, created_at,
+                   ROUND((selling_price-cost_price)*100.0/selling_price,1) AS margin_pct
+            FROM products WHERE is_active=1
+        """
+        params = []
+        
+        if selected_cat != "All":
+            query += " AND category=?"
+            params.append(selected_cat)
+        if search_term:
+            query += " AND LOWER(product_name) LIKE LOWER(?)"
+            params.append(f"%{search_term}%")
+        if show_low:
+            query += " AND stock <= low_stock_threshold"
+            
+        query += " ORDER BY category, product_name"
+        
+        df = pd.read_sql_query(query, conn, params=params)
+        conn.close()
+        
+        st.markdown(f"**{len(df)} products found**")
+        st.dataframe(df.drop(columns=["product_id"]),
+                     use_container_width=True, hide_index=True)
+        
+        st.divider()
+
+        # Add new product form
+        with st.expander("➕ Add New Product", expanded=False):
+            with st.form("add_product_form"):
+                c1, c2 = st.columns(2)
+                
+                with c1:
+                    new_name     = st.text_input("Product Name *")
+                    new_category = st.selectbox("Category *", cats[1:])
+                    new_cost     = st.number_input("Cost Price (PKR) *", min_value=1.0, step=5.0)
+                    new_selling  = st.number_input("Selling Price (PKR) *", min_value=1.0, step=5.0)
+                    
+                with c2:
+                    new_stock    = st.number_input("Initial Stock", min_value=0, step=1)
+                    new_supplier = st.text_input("Supplier")
+                    new_threshold= st.number_input("Low Stock Alert At", min_value=1, value=10)
+                    
+                submitted = st.form_submit_button("Add Product", use_container_width=True)
+                
+                if submitted:
+                    if not new_name:
+                        st.error("Product name is required.")
+                    elif new_selling <= new_cost:
+                        st.error("Selling price must be greater than cost price.")
+                    else:
+                        try:
+                            conn   = get_connection()
+                            cursor = conn.cursor()
+                            from datetime import date
+                            
+                            cursor.execute("""
+                                INSERT INTO products
+                                (product_name, category, cost_price, selling_price,
+                                 stock, supplier, low_stock_threshold, created_at)
+                                VALUES (?,?,?,?,?,?,?,?)
+                            """, (new_name, new_category, new_cost, new_selling,
+                                  new_stock, new_supplier, new_threshold,
+                                  date.today().isoformat()))
+                            conn.commit()
+                            conn.close()
+                            
+                            st.success(f"✅ '{new_name}' added successfully!")
+                            st.cache_data.clear()
+                            st.rerun()
+                        except Exception as e:
+                            st.error(f"Error: {e}")
+
+        # Stock adjustment
+        st.divider()
+        st.markdown("**📦 Quick Stock Adjustment**")
+        
+        if not df.empty:
+            product_options = dict(zip(df["product_name"], df["product_id"]))
+            selected_product = st.selectbox("Select product", list(product_options.keys()),
+                                            key="stock_adjust_product")
+                                            
+            adj_col1, adj_col2 = st.columns([2, 1])
+            with adj_col1:
+                adj_qty = st.number_input("Quantity to add (negative to reduce)",
+                                          value=0, step=1, key="adj_qty")
+            with adj_col2:
+                if st.button("Update Stock", use_container_width=True):
+                    if adj_qty != 0:
+                        pid    = product_options[selected_product]
+                        conn   = get_connection()
+                        cursor = conn.cursor()
+                        from datetime import date
+                        cursor.execute("""
+                            UPDATE products
+                            SET stock = MAX(0, stock + ?), updated_at = ?
+                            WHERE product_id = ?
+                        """, (adj_qty, date.today().isoformat(), pid))
+                        conn.commit()
+                        conn.close()
+                        
+                        st.success(f"Stock updated by {adj_qty:+d} units.")
+                        st.cache_data.clear()
+                        st.rerun()
+
+    # ── Tab 2: Purchase Orders ─────────────────────────────────────────────
+    with tab2:
+        from database.db_manager import get_connection
+        
+        # Pending orders
+        st.markdown("**🔴 Pending Orders**")
+        conn = get_connection()
+        df_pending = pd.read_sql_query("""
+            SELECT po.id, p.product_name, po.quantity_ordered,
+                   po.cost_per_unit, po.total_cost, po.supplier, po.order_date
+            FROM purchase_orders po
+            JOIN products p ON po.product_id = p.product_id
+            WHERE po.status = 'pending'
+            ORDER BY po.order_date DESC
+        """, conn)
+        conn.close()
+
+        if df_pending.empty:
+            st.info("No pending orders.")
+        else:
+            for _, row in df_pending.iterrows():
+                col_info, col_btn = st.columns([4, 1])
+                with col_info:
+                    st.markdown(
+                        f"**{row['product_name']}** — {row['quantity_ordered']} units "
+                        f"from {row['supplier']} | Rs. {row['total_cost']:,.0f} "
+                        f"| Ordered: {row['order_date']}"
+                    )
+                with col_btn:
+                    if st.button("✅ Received", key=f"recv_{row['id']}"):
+                        conn   = get_connection()
+                        cursor = conn.cursor()
+                        from datetime import date
+                        
+                        cursor.execute("""
+                            UPDATE purchase_orders
+                            SET status='received', received_date=?
+                            WHERE id=?
+                        """, (date.today().isoformat(), row['id']))
+                        
+                        cursor.execute("""
+                            UPDATE products SET stock=stock+?, updated_at=?
+                            WHERE product_id=(
+                                SELECT product_id FROM purchase_orders WHERE id=?)
+                        """, (row['quantity_ordered'], date.today().isoformat(), row['id']))
+                        
+                        conn.commit()
+                        conn.close()
+                        
+                        st.success(f"Order received. Stock updated.")
+                        st.cache_data.clear()
+                        st.rerun()
+                        
+        st.divider()
+
+        # Create new order
+        with st.expander("➕ Create Purchase Order", expanded=False):
+            conn = get_connection()
+            products_df = pd.read_sql_query(
+                "SELECT product_id, product_name, supplier, cost_price FROM products WHERE is_active=1 ORDER BY product_name",
+                conn
+            )
+            conn.close()
+            
+            with st.form("create_order_form"):
+                product_map  = dict(zip(products_df["product_name"], products_df["product_id"]))
+                supplier_map = dict(zip(products_df["product_name"], products_df["supplier"].fillna("")))
+                cost_map     = dict(zip(products_df["product_name"], products_df["cost_price"]))
+                
+                selected = st.selectbox("Product *", list(product_map.keys()))
+                
+                o_col1, o_col2 = st.columns(2)
+                with o_col1:
+                    o_qty      = st.number_input("Quantity *", min_value=1, value=50)
+                    o_supplier = st.text_input("Supplier *",
+                                               value=supplier_map.get(selected, ""))
+                with o_col2:
+                    o_cost     = st.number_input("Cost per unit (PKR) *",
+                                                 value=float(cost_map.get(selected, 0)),
+                                                 min_value=0.01)
+                                                 
+                st.info(f"Total cost: **Rs. {o_qty * o_cost:,.0f}**")
+                
+                if st.form_submit_button("Place Order", use_container_width=True):
+                    try:
+                        from datetime import date
+                        conn   = get_connection()
+                        cursor = conn.cursor()
+                        cursor.execute("""
+                            INSERT INTO purchase_orders
+                            (product_id, quantity_ordered, cost_per_unit, total_cost, supplier, order_date)
+                            VALUES (?,?,?,?,?,?)
+                        """, (product_map[selected], o_qty, o_cost,
+                              round(o_qty * o_cost, 2), o_supplier,
+                              date.today().isoformat()))
+                        conn.commit()
+                        conn.close()
+                        
+                        st.success(f"✅ Purchase order placed for {selected}.")
+                        st.cache_data.clear()
+                        st.rerun()
+                    except Exception as e:
+                        st.error(f"Error: {e}")
+
+        # Order history
+        st.divider()
+        st.markdown("**📋 Order History**")
+        
+        conn = get_connection()
+        df_history = pd.read_sql_query("""
+            SELECT po.id, p.product_name, po.quantity_ordered, po.total_cost,
+                   po.supplier, po.order_date, po.status, po.received_date
+            FROM purchase_orders po
+            JOIN products p ON po.product_id = p.product_id
+            ORDER BY po.order_date DESC LIMIT 50
+        """, conn)
+        conn.close()
+
+        if not df_history.empty:
+            total_spent = df_history[df_history["status"]=="received"]["total_cost"].sum()
+            st.info(f"Total procurement spend (received): **Rs. {total_spent:,.0f}**")
+            st.dataframe(df_history, use_container_width=True, hide_index=True)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
 # SIDEBAR
 # ══════════════════════════════════════════════════════════════════════════════
 
@@ -1047,7 +1308,7 @@ def render_sidebar():
         # Navigation
         page = st.radio(
             "Navigation",
-            options=["📊 Store Overview", "📦 Inventory Intel", "🤖 AI Assistant"],
+            options=["📊 Store Overview", "📦 Inventory Intel", "🤖 AI Assistant", "🏪 Manage Store"],
             label_visibility="collapsed",
             key="nav"
         )
@@ -1133,6 +1394,8 @@ def main():
         page_inventory_intelligence()
     elif "AI Assistant" in page:
         page_ai_assistant()
+    elif "Manage Store" in page:
+        page_manage_store()
 
 
 # Streamlit runs main() automatically when you run:
