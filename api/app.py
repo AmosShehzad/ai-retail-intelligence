@@ -28,7 +28,6 @@ from api.routers import analytics, inventory, rag, products, purchase_orders
 
 from database.db_manager import initialize_database
 from api.error_handlers import register_error_handlers
-from api.routers import analytics, inventory, rag
 
 # ── Logging ───────────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -137,39 +136,32 @@ def create_app() -> FastAPI:
 
     @app.get("/health", tags=["Health"])
     async def health_check():
-        """
-        Detailed health check.
-        Verifies DB connection is alive, not just that server is up.
-        """
         try:
             from database.db_manager import get_connection
             conn   = get_connection()
             cursor = conn.cursor()
-            cursor.execute("SELECT COUNT(*) FROM products")
+            cursor.execute("SELECT COUNT(*) FROM products WHERE is_active=1")
             product_count = cursor.fetchone()[0]
             cursor.execute("SELECT COUNT(*) FROM sales")
             sales_count = cursor.fetchone()[0]
             conn.close()
 
-            return JSONResponse(
-                status_code=200,
-                content={
-                    "status"        : "healthy",
-                    "database"      : "connected",
-                    "products_count": product_count,
-                    "sales_count"   : sales_count,
-                }
-            )
+            # LangSmith status
+            from rag.langsmith_config import TRACING_ENABLED, LANGSMITH_PROJECT
+            langsmith_status = "enabled" if TRACING_ENABLED else "disabled"
+
+            return JSONResponse(status_code=200, content={
+                "status"          : "healthy",
+                "database"        : "connected",
+                "products_count"  : product_count,
+                "sales_count"     : sales_count,
+                "langsmith"       : langsmith_status,
+                "langsmith_project": LANGSMITH_PROJECT,
+            })
         except Exception as e:
-            log.error("Health check failed: %s", str(e))
-            return JSONResponse(
-                status_code=503,
-                content={
-                    "status"  : "unhealthy",
-                    "database": "disconnected",
-                    "error"   : str(e),
-                }
-            )
+            return JSONResponse(status_code=503, content={
+                "status": "unhealthy", "error": str(e)
+            })
 
     log.info("App created with %d routes", len(app.routes))
     return app
