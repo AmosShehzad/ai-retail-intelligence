@@ -1,0 +1,123 @@
+services:
+
+  # ── Ollama: phi3 LLM server ──────────────────────────────────
+  ollama:
+    image: ollama/ollama:latest
+    container_name: retail_ollama
+
+    ports:
+      - "11434:11434"
+
+    volumes:
+      # Named volume — phi3 model persists here
+      - ollama_data:/root/.ollama
+
+    healthcheck:
+      test: ["CMD", "ollama", "ps"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+      start_period: 40s
+
+    restart: unless-stopped
+
+    networks:
+      - retail_network
+
+
+  # ── FastAPI Backend ──────────────────────────────────────────
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: final
+
+    container_name: retail_api
+
+    command: >
+      uvicorn api.app:app
+      --host 0.0.0.0
+      --port 8000
+      --reload
+
+    ports:
+      - "8000:8000"
+
+    volumes:
+      - ./database:/app/database
+      - ./faiss_index:/app/faiss_index
+      - ./data:/app/data
+      - .:/app
+
+    environment:
+      - PYTHONPATH=/app
+      - DB_PATH=/app/database/retail.db
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - OLLAMA_MODEL=phi3
+      - LANGCHAIN_TRACING_V2=${LANGCHAIN_TRACING_V2}
+      - LANGCHAIN_API_KEY=${LANGCHAIN_API_KEY}
+      - LANGCHAIN_PROJECT=${LANGCHAIN_PROJECT}
+      - LANGCHAIN_ENDPOINT=${LANGCHAIN_ENDPOINT}
+
+    depends_on:
+      ollama:
+        condition: service_healthy
+
+    restart: unless-stopped
+
+    networks:
+      - retail_network
+
+
+  # ── Streamlit Frontend ───────────────────────────────────────
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: final
+
+    container_name: retail_frontend
+
+    command: >
+      streamlit run frontend/dashboard.py
+      --server.port 8501
+      --server.address 0.0.0.0
+      --server.headless true
+
+    ports:
+      - "8501:8501"
+
+    volumes:
+      - ./database:/app/database
+      - ./faiss_index:/app/faiss_index
+      - ./data:/app/data
+      - .:/app
+
+    environment:
+      - PYTHONPATH=/app
+      - DB_PATH=/app/database/retail.db
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - OLLAMA_MODEL=phi3
+      - LANGCHAIN_TRACING_V2=${LANGCHAIN_TRACING_V2}
+      - LANGCHAIN_API_KEY=${LANGCHAIN_API_KEY}
+      - LANGCHAIN_PROJECT=${LANGCHAIN_PROJECT}
+      - LANGCHAIN_ENDPOINT=${LANGCHAIN_ENDPOINT}
+
+    depends_on:
+      - api
+
+    restart: unless-stopped
+
+    networks:
+      - retail_network
+
+
+# ── Named Volumes ──────────────────────────────────────────────
+volumes:
+  ollama_data:
+
+
+# ── Shared Network ─────────────────────────────────────────────
+networks:
+  retail_network:
+    driver: bridge

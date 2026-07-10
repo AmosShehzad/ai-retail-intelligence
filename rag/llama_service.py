@@ -56,7 +56,8 @@ class LlamaConfig:
     model_name: str = "phi3"
 
     # Where Ollama server is listening
-    base_url: str = "http://localhost:11434"
+    import os
+    base_url: str = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 
     # TEMPERATURE: controls randomness of output
     # 0.0 = fully deterministic (same input → same output every time)
@@ -73,8 +74,8 @@ class LlamaConfig:
 
     # TIMEOUT: max seconds to wait for Ollama to respond
     # Without this, a hung request blocks your FastAPI endpoint forever
-    # 180s is generous for local CPU inference of phi3 (8B params)
-    timeout_seconds: int = 180
+    # 360 is generous for local CPU inference of phi3 (8B params)
+    timeout_seconds: int = 360
 
     # RETRY COUNT: how many times to retry a failed/empty call
     # Local LLMs occasionally return empty strings due to sampling
@@ -94,7 +95,10 @@ DEFAULT_CONFIG = LlamaConfig()
 # PART 2: CONNECTION HEALTH CHECK
 # ══════════════════════════════════════════════════════════════════════════════
 
-def check_ollama_connection(base_url: str = "http://localhost:11434") -> Dict[str, Any]:
+def check_ollama_connection(base_url: str = None) -> Dict[str, Any]:
+    if base_url is None:
+        import os
+        base_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
     """
     Verifies Ollama server is running and phi3 model is available
     BEFORE attempting any actual generation call.
