@@ -430,6 +430,7 @@ class LlamaService:
         evaluate_baseline.py) without needing an event loop, while
         still providing proper async support for production FastAPI use.
         """
+
         if not self.is_ready():
             return {
                 "success"     : False,
@@ -438,7 +439,9 @@ class LlamaService:
                 "attempts"    : 0,
                 "error"       : "Ollama is not reachable or phi3 model not installed.",
             }
-
+        response = await asyncio.wait_for(
+        self.llm.ainvoke(messages),
+        timeout=self.config.timeout_seconds,)
         messages = []
         if system_prompt:
             messages.append(SystemMessage(content=system_prompt))
