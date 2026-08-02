@@ -1,0 +1,1789 @@
+[
+  {
+    "page_content": "Product: Tapal Danedar 200g\nCategory: Tea & Beverages\nSupplier: Tapal Foods\n\nPricing: Cost price is Rs. 185, selling price is Rs. 235, giving a profit margin of 21.28%.\n\nStock Status: Current inventory is CRITICALLY LOW — only 4 units remaining.\n\nSales Performance: This product is a fast mover at 239.50 units/day. Total units sold in the last 30 days: 7185.\n\nBusiness Insight: Tapal Danedar 200g is a high-velocity product that will run out in approximately 0.0 days at current sales rate. Restock urgently.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 1,
+      "product_name": "Tapal Danedar 200g",
+      "category": "Tea & Beverages",
+      "stock": 4,
+      "selling_price": 235.0,
+      "margin_pct": 21.28,
+      "daily_velocity": 239.5,
+      "supplier": "Tapal Foods"
+    }
+  },
+  {
+    "page_content": "Product: Tapal Danedar 500g\nCategory: Tea & Beverages\nSupplier: Tapal Foods\n\nPricing: Cost price is Rs. 430, selling price is Rs. 540, giving a profit margin of 20.37%.\n\nStock Status: Current inventory is adequate at 40 units.\n\nSales Performance: This product is a fast mover at 78.40 units/day. Total units sold in the last 30 days: 2352.\n\nBusiness Insight: Tapal Danedar 500g is performing normally with a 20.37% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 2,
+      "product_name": "Tapal Danedar 500g",
+      "category": "Tea & Beverages",
+      "stock": 40,
+      "selling_price": 540.0,
+      "margin_pct": 20.37,
+      "daily_velocity": 78.4,
+      "supplier": "Tapal Foods"
+    }
+  },
+  {
+    "page_content": "Product: Tapal Family Mixture 95g\nCategory: Tea & Beverages\nSupplier: Tapal Foods\n\nPricing: Cost price is Rs. 88, selling price is Rs. 118, giving a profit margin of 25.42%.\n\nStock Status: Current inventory is adequate at 60 units.\n\nSales Performance: This product is a fast mover at 135.00 units/day. Total units sold in the last 30 days: 4050.\n\nBusiness Insight: Tapal Family Mixture 95g is performing normally with a 25.42% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 3,
+      "product_name": "Tapal Family Mixture 95g",
+      "category": "Tea & Beverages",
+      "stock": 60,
+      "selling_price": 118.0,
+      "margin_pct": 25.42,
+      "daily_velocity": 135.0,
+      "supplier": "Tapal Foods"
+    }
+  },
+  {
+    "page_content": "Product: Lipton Yellow Label 200g\nCategory: Tea & Beverages\nSupplier: Unilever Pakistan\n\nPricing: Cost price is Rs. 195, selling price is Rs. 250, giving a profit margin of 22.00%.\n\nStock Status: Current inventory is adequate at 50 units.\n\nSales Performance: This product is a fast mover at 81.20 units/day. Total units sold in the last 30 days: 2436.\n\nBusiness Insight: Lipton Yellow Label 200g is performing normally with a 22.00% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 4,
+      "product_name": "Lipton Yellow Label 200g",
+      "category": "Tea & Beverages",
+      "stock": 50,
+      "selling_price": 250.0,
+      "margin_pct": 22.0,
+      "daily_velocity": 81.2,
+      "supplier": "Unilever Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: Nescafe Classic 50g\nCategory: Tea & Beverages\nSupplier: Nestle Pakistan\n\nPricing: Cost price is Rs. 320, selling price is Rs. 410, giving a profit margin of 21.95%.\n\nStock Status: Current inventory is adequate at 30 units.\n\nSales Performance: This product is a fast mover at 42.90 units/day. Total units sold in the last 30 days: 1287.\n\nBusiness Insight: Nescafe Classic 50g is performing normally with a 21.95% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 5,
+      "product_name": "Nescafe Classic 50g",
+      "category": "Tea & Beverages",
+      "stock": 30,
+      "selling_price": 410.0,
+      "margin_pct": 21.95,
+      "daily_velocity": 42.9,
+      "supplier": "Nestle Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: Nestle Milo 400g\nCategory: Tea & Beverages\nSupplier: Nestle Pakistan\n\nPricing: Cost price is Rs. 530, selling price is Rs. 670, giving a profit margin of 20.90%.\n\nStock Status: Current inventory is adequate at 25 units.\n\nSales Performance: This product is a fast mover at 39.10 units/day. Total units sold in the last 30 days: 1173.\n\nBusiness Insight: Nestle Milo 400g is performing normally with a 20.90% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 6,
+      "product_name": "Nestle Milo 400g",
+      "category": "Tea & Beverages",
+      "stock": 25,
+      "selling_price": 670.0,
+      "margin_pct": 20.9,
+      "daily_velocity": 39.1,
+      "supplier": "Nestle Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: Tang Orange 500g\nCategory: Tea & Beverages\nSupplier: Mondelez Pakistan\n\nPricing: Cost price is Rs. 178, selling price is Rs. 230, giving a profit margin of 22.61%.\n\nStock Status: Current inventory is adequate at 45 units.\n\nSales Performance: This product is a fast mover at 83.50 units/day. Total units sold in the last 30 days: 2505.\n\nBusiness Insight: Tang Orange 500g is performing normally with a 22.61% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 7,
+      "product_name": "Tang Orange 500g",
+      "category": "Tea & Beverages",
+      "stock": 45,
+      "selling_price": 230.0,
+      "margin_pct": 22.61,
+      "daily_velocity": 83.5,
+      "supplier": "Mondelez Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: Rooh Afza 800ml\nCategory: Tea & Beverages\nSupplier: Hamdard\n\nPricing: Cost price is Rs. 345, selling price is Rs. 440, giving a profit margin of 21.59%.\n\nStock Status: Current inventory is adequate at 20 units.\n\nSales Performance: This product is a fast mover at 50.40 units/day. Total units sold in the last 30 days: 1512.\n\nBusiness Insight: Rooh Afza 800ml is performing normally with a 21.59% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 8,
+      "product_name": "Rooh Afza 800ml",
+      "category": "Tea & Beverages",
+      "stock": 20,
+      "selling_price": 440.0,
+      "margin_pct": 21.59,
+      "daily_velocity": 50.4,
+      "supplier": "Hamdard"
+    }
+  },
+  {
+    "page_content": "Product: Shan Biryani Masala 60g\nCategory: Spices & Masala\nSupplier: Shan Foods\n\nPricing: Cost price is Rs. 75, selling price is Rs. 98, giving a profit margin of 23.47%.\n\nStock Status: Current inventory is adequate at 22 units.\n\nSales Performance: This product is a fast mover at 233.80 units/day. Total units sold in the last 30 days: 7014.\n\nBusiness Insight: Shan Biryani Masala 60g is performing normally with a 23.47% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 9,
+      "product_name": "Shan Biryani Masala 60g",
+      "category": "Spices & Masala",
+      "stock": 22,
+      "selling_price": 98.0,
+      "margin_pct": 23.47,
+      "daily_velocity": 233.8,
+      "supplier": "Shan Foods"
+    }
+  },
+  {
+    "page_content": "Product: Shan Karahi Masala 50g\nCategory: Spices & Masala\nSupplier: Shan Foods\n\nPricing: Cost price is Rs. 68, selling price is Rs. 88, giving a profit margin of 22.73%.\n\nStock Status: Current inventory is adequate at 95 units.\n\nSales Performance: This product is a fast mover at 94.30 units/day. Total units sold in the last 30 days: 2829.\n\nBusiness Insight: Shan Karahi Masala 50g is performing normally with a 22.73% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 10,
+      "product_name": "Shan Karahi Masala 50g",
+      "category": "Spices & Masala",
+      "stock": 95,
+      "selling_price": 88.0,
+      "margin_pct": 22.73,
+      "daily_velocity": 94.3,
+      "supplier": "Shan Foods"
+    }
+  },
+  {
+    "page_content": "Product: Shan Nihari Masala 60g\nCategory: Spices & Masala\nSupplier: Shan Foods\n\nPricing: Cost price is Rs. 70, selling price is Rs. 92, giving a profit margin of 23.91%.\n\nStock Status: Current inventory is adequate at 80 units.\n\nSales Performance: This product is a fast mover at 96.80 units/day. Total units sold in the last 30 days: 2904.\n\nBusiness Insight: Shan Nihari Masala 60g is performing normally with a 23.91% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 11,
+      "product_name": "Shan Nihari Masala 60g",
+      "category": "Spices & Masala",
+      "stock": 80,
+      "selling_price": 92.0,
+      "margin_pct": 23.91,
+      "daily_velocity": 96.8,
+      "supplier": "Shan Foods"
+    }
+  },
+  {
+    "page_content": "Product: National Biryani Masala 55g\nCategory: Spices & Masala\nSupplier: National Foods\n\nPricing: Cost price is Rs. 70, selling price is Rs. 92, giving a profit margin of 23.91%.\n\nStock Status: Current inventory is adequate at 70 units.\n\nSales Performance: This product is a fast mover at 124.70 units/day. Total units sold in the last 30 days: 3741.\n\nBusiness Insight: National Biryani Masala 55g is performing normally with a 23.91% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 12,
+      "product_name": "National Biryani Masala 55g",
+      "category": "Spices & Masala",
+      "stock": 70,
+      "selling_price": 92.0,
+      "margin_pct": 23.91,
+      "daily_velocity": 124.7,
+      "supplier": "National Foods"
+    }
+  },
+  {
+    "page_content": "Product: National Karahi Masala 50g\nCategory: Spices & Masala\nSupplier: National Foods\n\nPricing: Cost price is Rs. 65, selling price is Rs. 85, giving a profit margin of 23.53%.\n\nStock Status: Current inventory is adequate at 65 units.\n\nSales Performance: This product is a fast mover at 94.30 units/day. Total units sold in the last 30 days: 2829.\n\nBusiness Insight: National Karahi Masala 50g is performing normally with a 23.53% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 13,
+      "product_name": "National Karahi Masala 50g",
+      "category": "Spices & Masala",
+      "stock": 65,
+      "selling_price": 85.0,
+      "margin_pct": 23.53,
+      "daily_velocity": 94.3,
+      "supplier": "National Foods"
+    }
+  },
+  {
+    "page_content": "Product: Ahmed Chaat Masala 100g\nCategory: Spices & Masala\nSupplier: Ahmed Foods\n\nPricing: Cost price is Rs. 58, selling price is Rs. 78, giving a profit margin of 25.64%.\n\nStock Status: Current inventory is adequate at 90 units.\n\nSales Performance: This product is a fast mover at 71.90 units/day. Total units sold in the last 30 days: 2157.\n\nBusiness Insight: Ahmed Chaat Masala 100g is performing normally with a 25.64% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 14,
+      "product_name": "Ahmed Chaat Masala 100g",
+      "category": "Spices & Masala",
+      "stock": 90,
+      "selling_price": 78.0,
+      "margin_pct": 25.64,
+      "daily_velocity": 71.9,
+      "supplier": "Ahmed Foods"
+    }
+  },
+  {
+    "page_content": "Product: Mehran Tikka Masala 50g\nCategory: Spices & Masala\nSupplier: Mehran Foods\n\nPricing: Cost price is Rs. 60, selling price is Rs. 80, giving a profit margin of 25.00%.\n\nStock Status: Current inventory is adequate at 75 units.\n\nSales Performance: This product is a fast mover at 67.80 units/day. Total units sold in the last 30 days: 2034.\n\nBusiness Insight: Mehran Tikka Masala 50g is performing normally with a 25.00% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 15,
+      "product_name": "Mehran Tikka Masala 50g",
+      "category": "Spices & Masala",
+      "stock": 75,
+      "selling_price": 80.0,
+      "margin_pct": 25.0,
+      "daily_velocity": 67.8,
+      "supplier": "Mehran Foods"
+    }
+  },
+  {
+    "page_content": "Product: Nestle MilkPak 1L\nCategory: Dairy\nSupplier: Nestle Pakistan\n\nPricing: Cost price is Rs. 172, selling price is Rs. 220, giving a profit margin of 21.82%.\n\nStock Status: Current inventory is LOW — 7 units remaining, consider restocking.\n\nSales Performance: This product is a fast mover at 207.10 units/day. Total units sold in the last 30 days: 6213.\n\nBusiness Insight: Nestle MilkPak 1L is a high-velocity product that will run out in approximately 0.0 days at current sales rate. Restock urgently.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 16,
+      "product_name": "Nestle MilkPak 1L",
+      "category": "Dairy",
+      "stock": 7,
+      "selling_price": 220.0,
+      "margin_pct": 21.82,
+      "daily_velocity": 207.1,
+      "supplier": "Nestle Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: Olpers Milk 1L\nCategory: Dairy\nSupplier: Engro Foods\n\nPricing: Cost price is Rs. 165, selling price is Rs. 215, giving a profit margin of 23.26%.\n\nStock Status: Current inventory is adequate at 19 units.\n\nSales Performance: This product is a fast mover at 188.70 units/day. Total units sold in the last 30 days: 5661.\n\nBusiness Insight: Olpers Milk 1L is performing normally with a 23.26% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 17,
+      "product_name": "Olpers Milk 1L",
+      "category": "Dairy",
+      "stock": 19,
+      "selling_price": 215.0,
+      "margin_pct": 23.26,
+      "daily_velocity": 188.7,
+      "supplier": "Engro Foods"
+    }
+  },
+  {
+    "page_content": "Product: Haleeb Milk 1L\nCategory: Dairy\nSupplier: Haleeb Foods\n\nPricing: Cost price is Rs. 158, selling price is Rs. 208, giving a profit margin of 24.04%.\n\nStock Status: Current inventory is adequate at 45 units.\n\nSales Performance: This product is a fast mover at 60.70 units/day. Total units sold in the last 30 days: 1821.\n\nBusiness Insight: Haleeb Milk 1L is performing normally with a 24.04% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 18,
+      "product_name": "Haleeb Milk 1L",
+      "category": "Dairy",
+      "stock": 45,
+      "selling_price": 208.0,
+      "margin_pct": 24.04,
+      "daily_velocity": 60.7,
+      "supplier": "Haleeb Foods"
+    }
+  },
+  {
+    "page_content": "Product: Nestle Cream 200ml\nCategory: Dairy\nSupplier: Nestle Pakistan\n\nPricing: Cost price is Rs. 118, selling price is Rs. 158, giving a profit margin of 25.32%.\n\nStock Status: Current inventory is adequate at 35 units.\n\nSales Performance: This product is a fast mover at 61.20 units/day. Total units sold in the last 30 days: 1836.\n\nBusiness Insight: Nestle Cream 200ml is performing normally with a 25.32% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 19,
+      "product_name": "Nestle Cream 200ml",
+      "category": "Dairy",
+      "stock": 35,
+      "selling_price": 158.0,
+      "margin_pct": 25.32,
+      "daily_velocity": 61.2,
+      "supplier": "Nestle Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: Olpers Cream 200ml\nCategory: Dairy\nSupplier: Engro Foods\n\nPricing: Cost price is Rs. 112, selling price is Rs. 152, giving a profit margin of 26.32%.\n\nStock Status: Current inventory is adequate at 30 units.\n\nSales Performance: This product is a fast mover at 62.50 units/day. Total units sold in the last 30 days: 1875.\n\nBusiness Insight: Olpers Cream 200ml is performing normally with a 26.32% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 20,
+      "product_name": "Olpers Cream 200ml",
+      "category": "Dairy",
+      "stock": 30,
+      "selling_price": 152.0,
+      "margin_pct": 26.32,
+      "daily_velocity": 62.5,
+      "supplier": "Engro Foods"
+    }
+  },
+  {
+    "page_content": "Product: Good Milk Yogurt 400g\nCategory: Dairy\nSupplier: Good Milk\n\nPricing: Cost price is Rs. 88, selling price is Rs. 120, giving a profit margin of 26.67%.\n\nStock Status: Current inventory is adequate at 40 units.\n\nSales Performance: This product is a fast mover at 61.10 units/day. Total units sold in the last 30 days: 1833.\n\nBusiness Insight: Good Milk Yogurt 400g is performing normally with a 26.67% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 21,
+      "product_name": "Good Milk Yogurt 400g",
+      "category": "Dairy",
+      "stock": 40,
+      "selling_price": 120.0,
+      "margin_pct": 26.67,
+      "daily_velocity": 61.1,
+      "supplier": "Good Milk"
+    }
+  },
+  {
+    "page_content": "Product: Dalda Cooking Oil 1L\nCategory: Cooking Oil\nSupplier: Dalda Foods\n\nPricing: Cost price is Rs. 395, selling price is Rs. 490, giving a profit margin of 19.39%.\n\nStock Status: Current inventory is adequate at 45 units.\n\nSales Performance: This product is a fast mover at 61.80 units/day. Total units sold in the last 30 days: 1854.\n\nBusiness Insight: Dalda Cooking Oil 1L is performing normally with a 19.39% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 22,
+      "product_name": "Dalda Cooking Oil 1L",
+      "category": "Cooking Oil",
+      "stock": 45,
+      "selling_price": 490.0,
+      "margin_pct": 19.39,
+      "daily_velocity": 61.8,
+      "supplier": "Dalda Foods"
+    }
+  },
+  {
+    "page_content": "Product: Sufi Cooking Oil 1L\nCategory: Cooking Oil\nSupplier: Sufi Group\n\nPricing: Cost price is Rs. 385, selling price is Rs. 478, giving a profit margin of 19.46%.\n\nStock Status: Current inventory is adequate at 40 units.\n\nSales Performance: This product is a fast mover at 62.40 units/day. Total units sold in the last 30 days: 1872.\n\nBusiness Insight: Sufi Cooking Oil 1L is performing normally with a 19.46% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 23,
+      "product_name": "Sufi Cooking Oil 1L",
+      "category": "Cooking Oil",
+      "stock": 40,
+      "selling_price": 478.0,
+      "margin_pct": 19.46,
+      "daily_velocity": 62.4,
+      "supplier": "Sufi Group"
+    }
+  },
+  {
+    "page_content": "Product: Dalda Banaspati 1kg\nCategory: Cooking Oil\nSupplier: Dalda Foods\n\nPricing: Cost price is Rs. 435, selling price is Rs. 530, giving a profit margin of 17.92%.\n\nStock Status: Current inventory is adequate at 30 units.\n\nSales Performance: This product is a fast mover at 35.40 units/day. Total units sold in the last 30 days: 1062.\n\nBusiness Insight: Dalda Banaspati 1kg is performing normally with a 17.92% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 24,
+      "product_name": "Dalda Banaspati 1kg",
+      "category": "Cooking Oil",
+      "stock": 30,
+      "selling_price": 530.0,
+      "margin_pct": 17.92,
+      "daily_velocity": 35.4,
+      "supplier": "Dalda Foods"
+    }
+  },
+  {
+    "page_content": "Product: Habib Cooking Oil 1L\nCategory: Cooking Oil\nSupplier: Habib Oil\n\nPricing: Cost price is Rs. 378, selling price is Rs. 470, giving a profit margin of 19.57%.\n\nStock Status: Current inventory is adequate at 35 units.\n\nSales Performance: This product is a fast mover at 62.00 units/day. Total units sold in the last 30 days: 1860.\n\nBusiness Insight: Habib Cooking Oil 1L is performing normally with a 19.57% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 25,
+      "product_name": "Habib Cooking Oil 1L",
+      "category": "Cooking Oil",
+      "stock": 35,
+      "selling_price": 470.0,
+      "margin_pct": 19.57,
+      "daily_velocity": 62.0,
+      "supplier": "Habib Oil"
+    }
+  },
+  {
+    "page_content": "Product: Seasons Canola Oil 1L\nCategory: Cooking Oil\nSupplier: Seasons\n\nPricing: Cost price is Rs. 415, selling price is Rs. 510, giving a profit margin of 18.63%.\n\nStock Status: Current inventory is adequate at 25 units.\n\nSales Performance: This product is a fast mover at 32.50 units/day. Total units sold in the last 30 days: 975.\n\nBusiness Insight: Seasons Canola Oil 1L is performing normally with a 18.63% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 26,
+      "product_name": "Seasons Canola Oil 1L",
+      "category": "Cooking Oil",
+      "stock": 25,
+      "selling_price": 510.0,
+      "margin_pct": 18.63,
+      "daily_velocity": 32.5,
+      "supplier": "Seasons"
+    }
+  },
+  {
+    "page_content": "Product: Surf Excel 500g\nCategory: Detergents\nSupplier: Unilever Pakistan\n\nPricing: Cost price is Rs. 310, selling price is Rs. 395, giving a profit margin of 21.52%.\n\nStock Status: Current inventory is adequate at 18 units.\n\nSales Performance: This product is a fast mover at 106.30 units/day. Total units sold in the last 30 days: 3189.\n\nBusiness Insight: Surf Excel 500g is performing normally with a 21.52% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 27,
+      "product_name": "Surf Excel 500g",
+      "category": "Detergents",
+      "stock": 18,
+      "selling_price": 395.0,
+      "margin_pct": 21.52,
+      "daily_velocity": 106.3,
+      "supplier": "Unilever Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: Surf Excel 1kg\nCategory: Detergents\nSupplier: Unilever Pakistan\n\nPricing: Cost price is Rs. 590, selling price is Rs. 740, giving a profit margin of 20.27%.\n\nStock Status: Current inventory is adequate at 30 units.\n\nSales Performance: This product is a fast mover at 41.30 units/day. Total units sold in the last 30 days: 1239.\n\nBusiness Insight: Surf Excel 1kg is performing normally with a 20.27% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 28,
+      "product_name": "Surf Excel 1kg",
+      "category": "Detergents",
+      "stock": 30,
+      "selling_price": 740.0,
+      "margin_pct": 20.27,
+      "daily_velocity": 41.3,
+      "supplier": "Unilever Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: Ariel 500g\nCategory: Detergents\nSupplier: P&G Pakistan\n\nPricing: Cost price is Rs. 295, selling price is Rs. 378, giving a profit margin of 21.96%.\n\nStock Status: Current inventory is adequate at 35 units.\n\nSales Performance: This product is a fast mover at 62.40 units/day. Total units sold in the last 30 days: 1872.\n\nBusiness Insight: Ariel 500g is performing normally with a 21.96% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 29,
+      "product_name": "Ariel 500g",
+      "category": "Detergents",
+      "stock": 35,
+      "selling_price": 378.0,
+      "margin_pct": 21.96,
+      "daily_velocity": 62.4,
+      "supplier": "P&G Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: Bonus Washing Powder 1kg\nCategory: Detergents\nSupplier: Colgate-Palmolive\n\nPricing: Cost price is Rs. 225, selling price is Rs. 298, giving a profit margin of 24.50%.\n\nStock Status: Current inventory is adequate at 60 units.\n\nSales Performance: This product is a fast mover at 62.20 units/day. Total units sold in the last 30 days: 1866.\n\nBusiness Insight: Bonus Washing Powder 1kg is performing normally with a 24.50% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 30,
+      "product_name": "Bonus Washing Powder 1kg",
+      "category": "Detergents",
+      "stock": 60,
+      "selling_price": 298.0,
+      "margin_pct": 24.5,
+      "daily_velocity": 62.2,
+      "supplier": "Colgate-Palmolive"
+    }
+  },
+  {
+    "page_content": "Product: Brite Detergent 500g\nCategory: Detergents\nSupplier: Colgate-Palmolive\n\nPricing: Cost price is Rs. 175, selling price is Rs. 238, giving a profit margin of 26.47%.\n\nStock Status: Current inventory is adequate at 55 units.\n\nSales Performance: This product is a fast mover at 65.30 units/day. Total units sold in the last 30 days: 1959.\n\nBusiness Insight: Brite Detergent 500g is performing normally with a 26.47% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 31,
+      "product_name": "Brite Detergent 500g",
+      "category": "Detergents",
+      "stock": 55,
+      "selling_price": 238.0,
+      "margin_pct": 26.47,
+      "daily_velocity": 65.3,
+      "supplier": "Colgate-Palmolive"
+    }
+  },
+  {
+    "page_content": "Product: Lux Soap 150g\nCategory: Personal Care\nSupplier: Unilever Pakistan\n\nPricing: Cost price is Rs. 85, selling price is Rs. 118, giving a profit margin of 27.97%.\n\nStock Status: Current inventory is CRITICALLY LOW — only 3 units remaining.\n\nSales Performance: This product is a fast mover at 165.30 units/day. Total units sold in the last 30 days: 4959.\n\nBusiness Insight: Lux Soap 150g is a high-velocity product that will run out in approximately 0.0 days at current sales rate. Restock urgently.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 32,
+      "product_name": "Lux Soap 150g",
+      "category": "Personal Care",
+      "stock": 3,
+      "selling_price": 118.0,
+      "margin_pct": 27.97,
+      "daily_velocity": 165.3,
+      "supplier": "Unilever Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: Safeguard Soap 175g\nCategory: Personal Care\nSupplier: P&G Pakistan\n\nPricing: Cost price is Rs. 95, selling price is Rs. 132, giving a profit margin of 28.03%.\n\nStock Status: Current inventory is adequate at 100 units.\n\nSales Performance: This product is a fast mover at 148.20 units/day. Total units sold in the last 30 days: 4446.\n\nBusiness Insight: Safeguard Soap 175g is performing normally with a 28.03% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 33,
+      "product_name": "Safeguard Soap 175g",
+      "category": "Personal Care",
+      "stock": 100,
+      "selling_price": 132.0,
+      "margin_pct": 28.03,
+      "daily_velocity": 148.2,
+      "supplier": "P&G Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: Dettol Soap 175g\nCategory: Personal Care\nSupplier: Reckitt Pakistan\n\nPricing: Cost price is Rs. 98, selling price is Rs. 138, giving a profit margin of 28.99%.\n\nStock Status: Current inventory is adequate at 90 units.\n\nSales Performance: This product is a fast mover at 60.10 units/day. Total units sold in the last 30 days: 1803.\n\nBusiness Insight: Dettol Soap 175g is performing normally with a 28.99% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 34,
+      "product_name": "Dettol Soap 175g",
+      "category": "Personal Care",
+      "stock": 90,
+      "selling_price": 138.0,
+      "margin_pct": 28.99,
+      "daily_velocity": 60.1,
+      "supplier": "Reckitt Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: Lifebuoy Soap 135g\nCategory: Personal Care\nSupplier: Unilever Pakistan\n\nPricing: Cost price is Rs. 75, selling price is Rs. 108, giving a profit margin of 30.56%.\n\nStock Status: Current inventory is adequate at 85 units.\n\nSales Performance: This product is a fast mover at 102.60 units/day. Total units sold in the last 30 days: 3078.\n\nBusiness Insight: Lifebuoy Soap 135g is a high-margin product (30.56% margin) — prioritize keeping it in stock to maximize profitability.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 35,
+      "product_name": "Lifebuoy Soap 135g",
+      "category": "Personal Care",
+      "stock": 85,
+      "selling_price": 108.0,
+      "margin_pct": 30.56,
+      "daily_velocity": 102.6,
+      "supplier": "Unilever Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: Dettol Antiseptic 60ml\nCategory: Personal Care\nSupplier: Reckitt Pakistan\n\nPricing: Cost price is Rs. 128, selling price is Rs. 175, giving a profit margin of 26.86%.\n\nStock Status: Current inventory is adequate at 65 units.\n\nSales Performance: This product is a fast mover at 64.10 units/day. Total units sold in the last 30 days: 1923.\n\nBusiness Insight: Dettol Antiseptic 60ml is performing normally with a 26.86% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 36,
+      "product_name": "Dettol Antiseptic 60ml",
+      "category": "Personal Care",
+      "stock": 65,
+      "selling_price": 175.0,
+      "margin_pct": 26.86,
+      "daily_velocity": 64.1,
+      "supplier": "Reckitt Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: Colgate Total 75ml\nCategory: Personal Care\nSupplier: Colgate-Palmolive\n\nPricing: Cost price is Rs. 112, selling price is Rs. 155, giving a profit margin of 27.74%.\n\nStock Status: Current inventory is LOW — 15 units remaining, consider restocking.\n\nSales Performance: This product is a fast mover at 60.70 units/day. Total units sold in the last 30 days: 1821.\n\nBusiness Insight: Colgate Total 75ml is performing normally with a 27.74% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 37,
+      "product_name": "Colgate Total 75ml",
+      "category": "Personal Care",
+      "stock": 15,
+      "selling_price": 155.0,
+      "margin_pct": 27.74,
+      "daily_velocity": 60.7,
+      "supplier": "Colgate-Palmolive"
+    }
+  },
+  {
+    "page_content": "Product: Close Up 80ml\nCategory: Personal Care\nSupplier: Unilever Pakistan\n\nPricing: Cost price is Rs. 95, selling price is Rs. 132, giving a profit margin of 28.03%.\n\nStock Status: Current inventory is adequate at 75 units.\n\nSales Performance: This product is a fast mover at 62.70 units/day. Total units sold in the last 30 days: 1881.\n\nBusiness Insight: Close Up 80ml is performing normally with a 28.03% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 38,
+      "product_name": "Close Up 80ml",
+      "category": "Personal Care",
+      "stock": 75,
+      "selling_price": 132.0,
+      "margin_pct": 28.03,
+      "daily_velocity": 62.7,
+      "supplier": "Unilever Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: Sunsilk Shampoo 180ml\nCategory: Personal Care\nSupplier: Unilever Pakistan\n\nPricing: Cost price is Rs. 198, selling price is Rs. 265, giving a profit margin of 25.28%.\n\nStock Status: Current inventory is adequate at 40 units.\n\nSales Performance: This product is a fast mover at 38.30 units/day. Total units sold in the last 30 days: 1149.\n\nBusiness Insight: Sunsilk Shampoo 180ml is performing normally with a 25.28% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 39,
+      "product_name": "Sunsilk Shampoo 180ml",
+      "category": "Personal Care",
+      "stock": 40,
+      "selling_price": 265.0,
+      "margin_pct": 25.28,
+      "daily_velocity": 38.3,
+      "supplier": "Unilever Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: Knorr Chicken Noodles 66g\nCategory: Instant Food\nSupplier: Unilever Pakistan\n\nPricing: Cost price is Rs. 55, selling price is Rs. 80, giving a profit margin of 31.25%.\n\nStock Status: Current inventory is LOW — 6 units remaining, consider restocking.\n\nSales Performance: This product is a fast mover at 236.60 units/day. Total units sold in the last 30 days: 7098.\n\nBusiness Insight: Knorr Chicken Noodles 66g is a high-velocity product that will run out in approximately 0.0 days at current sales rate. Restock urgently.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 40,
+      "product_name": "Knorr Chicken Noodles 66g",
+      "category": "Instant Food",
+      "stock": 6,
+      "selling_price": 80.0,
+      "margin_pct": 31.25,
+      "daily_velocity": 236.6,
+      "supplier": "Unilever Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: Knorr Masala Noodles 66g\nCategory: Instant Food\nSupplier: Unilever Pakistan\n\nPricing: Cost price is Rs. 55, selling price is Rs. 80, giving a profit margin of 31.25%.\n\nStock Status: Current inventory is adequate at 160 units.\n\nSales Performance: This product is a fast mover at 215.30 units/day. Total units sold in the last 30 days: 6459.\n\nBusiness Insight: Knorr Masala Noodles 66g is a high-margin product (31.25% margin) — prioritize keeping it in stock to maximize profitability.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 41,
+      "product_name": "Knorr Masala Noodles 66g",
+      "category": "Instant Food",
+      "stock": 160,
+      "selling_price": 80.0,
+      "margin_pct": 31.25,
+      "daily_velocity": 215.3,
+      "supplier": "Unilever Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: Indomie Noodles 70g\nCategory: Instant Food\nSupplier: Kolson\n\nPricing: Cost price is Rs. 48, selling price is Rs. 70, giving a profit margin of 31.43%.\n\nStock Status: Current inventory is adequate at 140 units.\n\nSales Performance: This product is a fast mover at 142.90 units/day. Total units sold in the last 30 days: 4287.\n\nBusiness Insight: Indomie Noodles 70g is a high-margin product (31.43% margin) — prioritize keeping it in stock to maximize profitability.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 42,
+      "product_name": "Indomie Noodles 70g",
+      "category": "Instant Food",
+      "stock": 140,
+      "selling_price": 70.0,
+      "margin_pct": 31.43,
+      "daily_velocity": 142.9,
+      "supplier": "Kolson"
+    }
+  },
+  {
+    "page_content": "Product: Shan Soup Mix 60g\nCategory: Instant Food\nSupplier: Shan Foods\n\nPricing: Cost price is Rs. 68, selling price is Rs. 92, giving a profit margin of 26.09%.\n\nStock Status: Current inventory is adequate at 90 units.\n\nSales Performance: This product is a fast mover at 93.30 units/day. Total units sold in the last 30 days: 2799.\n\nBusiness Insight: Shan Soup Mix 60g is performing normally with a 26.09% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 43,
+      "product_name": "Shan Soup Mix 60g",
+      "category": "Instant Food",
+      "stock": 90,
+      "selling_price": 92.0,
+      "margin_pct": 26.09,
+      "daily_velocity": 93.3,
+      "supplier": "Shan Foods"
+    }
+  },
+  {
+    "page_content": "Product: National Ketchup 300g\nCategory: Instant Food\nSupplier: National Foods\n\nPricing: Cost price is Rs. 118, selling price is Rs. 158, giving a profit margin of 25.32%.\n\nStock Status: Current inventory is adequate at 70 units.\n\nSales Performance: This product is a fast mover at 94.40 units/day. Total units sold in the last 30 days: 2832.\n\nBusiness Insight: National Ketchup 300g is performing normally with a 25.32% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 44,
+      "product_name": "National Ketchup 300g",
+      "category": "Instant Food",
+      "stock": 70,
+      "selling_price": 158.0,
+      "margin_pct": 25.32,
+      "daily_velocity": 94.4,
+      "supplier": "National Foods"
+    }
+  },
+  {
+    "page_content": "Product: Knorr Ketchup 300g\nCategory: Instant Food\nSupplier: Unilever Pakistan\n\nPricing: Cost price is Rs. 122, selling price is Rs. 165, giving a profit margin of 26.06%.\n\nStock Status: Current inventory is adequate at 65 units.\n\nSales Performance: This product is a fast mover at 70.40 units/day. Total units sold in the last 30 days: 2112.\n\nBusiness Insight: Knorr Ketchup 300g is performing normally with a 26.06% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 45,
+      "product_name": "Knorr Ketchup 300g",
+      "category": "Instant Food",
+      "stock": 65,
+      "selling_price": 165.0,
+      "margin_pct": 26.06,
+      "daily_velocity": 70.4,
+      "supplier": "Unilever Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: Peek Freans Sooper 112g\nCategory: Snacks\nSupplier: EBM\n\nPricing: Cost price is Rs. 68, selling price is Rs. 95, giving a profit margin of 28.42%.\n\nStock Status: Current inventory is adequate at 150 units.\n\nSales Performance: This product is a fast mover at 169.20 units/day. Total units sold in the last 30 days: 5076.\n\nBusiness Insight: Peek Freans Sooper 112g is performing normally with a 28.42% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 46,
+      "product_name": "Peek Freans Sooper 112g",
+      "category": "Snacks",
+      "stock": 150,
+      "selling_price": 95.0,
+      "margin_pct": 28.42,
+      "daily_velocity": 169.2,
+      "supplier": "EBM"
+    }
+  },
+  {
+    "page_content": "Product: Peek Freans Rio 90g\nCategory: Snacks\nSupplier: EBM\n\nPricing: Cost price is Rs. 58, selling price is Rs. 82, giving a profit margin of 29.27%.\n\nStock Status: Current inventory is adequate at 120 units.\n\nSales Performance: This product is a fast mover at 119.80 units/day. Total units sold in the last 30 days: 3594.\n\nBusiness Insight: Peek Freans Rio 90g is performing normally with a 29.27% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 47,
+      "product_name": "Peek Freans Rio 90g",
+      "category": "Snacks",
+      "stock": 120,
+      "selling_price": 82.0,
+      "margin_pct": 29.27,
+      "daily_velocity": 119.8,
+      "supplier": "EBM"
+    }
+  },
+  {
+    "page_content": "Product: Bisconni Choc Chip 82g\nCategory: Snacks\nSupplier: Bisconni\n\nPricing: Cost price is Rs. 62, selling price is Rs. 88, giving a profit margin of 29.55%.\n\nStock Status: Current inventory is adequate at 100 units.\n\nSales Performance: This product is a fast mover at 62.40 units/day. Total units sold in the last 30 days: 1872.\n\nBusiness Insight: Bisconni Choc Chip 82g is performing normally with a 29.55% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 48,
+      "product_name": "Bisconni Choc Chip 82g",
+      "category": "Snacks",
+      "stock": 100,
+      "selling_price": 88.0,
+      "margin_pct": 29.55,
+      "daily_velocity": 62.4,
+      "supplier": "Bisconni"
+    }
+  },
+  {
+    "page_content": "Product: Kolson Slanty 30g\nCategory: Snacks\nSupplier: Kolson\n\nPricing: Cost price is Rs. 42, selling price is Rs. 65, giving a profit margin of 35.38%.\n\nStock Status: Current inventory is adequate at 200 units.\n\nSales Performance: This product is a fast mover at 224.40 units/day. Total units sold in the last 30 days: 6732.\n\nBusiness Insight: Kolson Slanty 30g is a high-margin product (35.38% margin) — prioritize keeping it in stock to maximize profitability.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 49,
+      "product_name": "Kolson Slanty 30g",
+      "category": "Snacks",
+      "stock": 200,
+      "selling_price": 65.0,
+      "margin_pct": 35.38,
+      "daily_velocity": 224.4,
+      "supplier": "Kolson"
+    }
+  },
+  {
+    "page_content": "Product: Lays Classic 34g\nCategory: Snacks\nSupplier: PepsiCo Pakistan\n\nPricing: Cost price is Rs. 40, selling price is Rs. 62, giving a profit margin of 35.48%.\n\nStock Status: Current inventory is adequate at 220 units.\n\nSales Performance: This product is a fast mover at 249.40 units/day. Total units sold in the last 30 days: 7482.\n\nBusiness Insight: Lays Classic 34g is a high-margin product (35.48% margin) — prioritize keeping it in stock to maximize profitability.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 50,
+      "product_name": "Lays Classic 34g",
+      "category": "Snacks",
+      "stock": 220,
+      "selling_price": 62.0,
+      "margin_pct": 35.48,
+      "daily_velocity": 249.4,
+      "supplier": "PepsiCo Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: English Biscuits 100g\nCategory: Snacks\nSupplier: EBM\n\nPricing: Cost price is Rs. 55, selling price is Rs. 78, giving a profit margin of 29.49%.\n\nStock Status: Current inventory is adequate at 130 units.\n\nSales Performance: This product is a fast mover at 62.10 units/day. Total units sold in the last 30 days: 1863.\n\nBusiness Insight: English Biscuits 100g is performing normally with a 29.49% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 51,
+      "product_name": "English Biscuits 100g",
+      "category": "Snacks",
+      "stock": 130,
+      "selling_price": 78.0,
+      "margin_pct": 29.49,
+      "daily_velocity": 62.1,
+      "supplier": "EBM"
+    }
+  },
+  {
+    "page_content": "Product: Candyland Cocomo 40g\nCategory: Snacks\nSupplier: Candyland\n\nPricing: Cost price is Rs. 35, selling price is Rs. 55, giving a profit margin of 36.36%.\n\nStock Status: Current inventory is adequate at 180 units.\n\nSales Performance: This product is a fast mover at 169.70 units/day. Total units sold in the last 30 days: 5091.\n\nBusiness Insight: Candyland Cocomo 40g is a high-margin product (36.36% margin) — prioritize keeping it in stock to maximize profitability.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 52,
+      "product_name": "Candyland Cocomo 40g",
+      "category": "Snacks",
+      "stock": 180,
+      "selling_price": 55.0,
+      "margin_pct": 36.36,
+      "daily_velocity": 169.7,
+      "supplier": "Candyland"
+    }
+  },
+  {
+    "page_content": "Product: Pepsi 1.5L\nCategory: Beverages\nSupplier: PepsiCo Pakistan\n\nPricing: Cost price is Rs. 115, selling price is Rs. 155, giving a profit margin of 25.81%.\n\nStock Status: Current inventory is CRITICALLY LOW — only 5 units remaining.\n\nSales Performance: This product is a fast mover at 277.30 units/day. Total units sold in the last 30 days: 8319.\n\nBusiness Insight: Pepsi 1.5L is a high-velocity product that will run out in approximately 0.0 days at current sales rate. Restock urgently.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 53,
+      "product_name": "Pepsi 1.5L",
+      "category": "Beverages",
+      "stock": 5,
+      "selling_price": 155.0,
+      "margin_pct": 25.81,
+      "daily_velocity": 277.3,
+      "supplier": "PepsiCo Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: Coca Cola 1.5L\nCategory: Beverages\nSupplier: Coca-Cola Pakistan\n\nPricing: Cost price is Rs. 118, selling price is Rs. 158, giving a profit margin of 25.32%.\n\nStock Status: Current inventory is adequate at 55 units.\n\nSales Performance: This product is a fast mover at 231.70 units/day. Total units sold in the last 30 days: 6951.\n\nBusiness Insight: Coca Cola 1.5L is performing normally with a 25.32% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 54,
+      "product_name": "Coca Cola 1.5L",
+      "category": "Beverages",
+      "stock": 55,
+      "selling_price": 158.0,
+      "margin_pct": 25.32,
+      "daily_velocity": 231.7,
+      "supplier": "Coca-Cola Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: 7UP 1.5L\nCategory: Beverages\nSupplier: PepsiCo Pakistan\n\nPricing: Cost price is Rs. 112, selling price is Rs. 152, giving a profit margin of 26.32%.\n\nStock Status: Current inventory is adequate at 50 units.\n\nSales Performance: This product is a fast mover at 118.30 units/day. Total units sold in the last 30 days: 3549.\n\nBusiness Insight: 7UP 1.5L is performing normally with a 26.32% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 55,
+      "product_name": "7UP 1.5L",
+      "category": "Beverages",
+      "stock": 50,
+      "selling_price": 152.0,
+      "margin_pct": 26.32,
+      "daily_velocity": 118.3,
+      "supplier": "PepsiCo Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: Sprite 345ml Can\nCategory: Beverages\nSupplier: Coca-Cola Pakistan\n\nPricing: Cost price is Rs. 82, selling price is Rs. 115, giving a profit margin of 28.70%.\n\nStock Status: Current inventory is adequate at 80 units.\n\nSales Performance: This product is a fast mover at 88.50 units/day. Total units sold in the last 30 days: 2655.\n\nBusiness Insight: Sprite 345ml Can is performing normally with a 28.70% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 56,
+      "product_name": "Sprite 345ml Can",
+      "category": "Beverages",
+      "stock": 80,
+      "selling_price": 115.0,
+      "margin_pct": 28.7,
+      "daily_velocity": 88.5,
+      "supplier": "Coca-Cola Pakistan"
+    }
+  },
+  {
+    "page_content": "Product: Pakola Ice Cream Soda 250ml\nCategory: Beverages\nSupplier: Mehran Bottlers\n\nPricing: Cost price is Rs. 48, selling price is Rs. 70, giving a profit margin of 31.43%.\n\nStock Status: Current inventory is adequate at 100 units.\n\nSales Performance: This product is a fast mover at 174.90 units/day. Total units sold in the last 30 days: 5247.\n\nBusiness Insight: Pakola Ice Cream Soda 250ml is a high-margin product (31.43% margin) — prioritize keeping it in stock to maximize profitability.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 57,
+      "product_name": "Pakola Ice Cream Soda 250ml",
+      "category": "Beverages",
+      "stock": 100,
+      "selling_price": 70.0,
+      "margin_pct": 31.43,
+      "daily_velocity": 174.9,
+      "supplier": "Mehran Bottlers"
+    }
+  },
+  {
+    "page_content": "Product: National Mango Pickle 400g\nCategory: Condiments\nSupplier: National Foods\n\nPricing: Cost price is Rs. 162, selling price is Rs. 215, giving a profit margin of 24.65%.\n\nStock Status: Current inventory is adequate at 40 units.\n\nSales Performance: This product is a fast mover at 71.40 units/day. Total units sold in the last 30 days: 2142.\n\nBusiness Insight: National Mango Pickle 400g is performing normally with a 24.65% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 58,
+      "product_name": "National Mango Pickle 400g",
+      "category": "Condiments",
+      "stock": 40,
+      "selling_price": 215.0,
+      "margin_pct": 24.65,
+      "daily_velocity": 71.4,
+      "supplier": "National Foods"
+    }
+  },
+  {
+    "page_content": "Product: Shan Mixed Pickle 400g\nCategory: Condiments\nSupplier: Shan Foods\n\nPricing: Cost price is Rs. 158, selling price is Rs. 210, giving a profit margin of 24.76%.\n\nStock Status: Current inventory is adequate at 38 units.\n\nSales Performance: This product is a fast mover at 73.20 units/day. Total units sold in the last 30 days: 2196.\n\nBusiness Insight: Shan Mixed Pickle 400g is performing normally with a 24.76% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 59,
+      "product_name": "Shan Mixed Pickle 400g",
+      "category": "Condiments",
+      "stock": 38,
+      "selling_price": 210.0,
+      "margin_pct": 24.76,
+      "daily_velocity": 73.2,
+      "supplier": "Shan Foods"
+    }
+  },
+  {
+    "page_content": "Product: National Chilli Sauce 300g\nCategory: Condiments\nSupplier: National Foods\n\nPricing: Cost price is Rs. 122, selling price is Rs. 165, giving a profit margin of 26.06%.\n\nStock Status: Current inventory is adequate at 45 units.\n\nSales Performance: This product is a fast mover at 75.50 units/day. Total units sold in the last 30 days: 2265.\n\nBusiness Insight: National Chilli Sauce 300g is performing normally with a 26.06% margin and stable sales velocity.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 60,
+      "product_name": "National Chilli Sauce 300g",
+      "category": "Condiments",
+      "stock": 45,
+      "selling_price": 165.0,
+      "margin_pct": 26.06,
+      "daily_velocity": 75.5,
+      "supplier": "National Foods"
+    }
+  },
+  {
+    "page_content": "Product: Test Product\nCategory: Snacks\nSupplier: Test Supplier\n\nPricing: Cost price is Rs. 50, selling price is Rs. 75, giving a profit margin of 33.33%.\n\nStock Status: Current inventory is adequate at 100 units.\n\nSales Performance: This product is a fast mover at 40.93 units/day. Total units sold in the last 30 days: 1228.\n\nBusiness Insight: Test Product is a high-margin product (33.33% margin) — prioritize keeping it in stock to maximize profitability.",
+    "metadata": {
+      "doc_type": "product",
+      "product_id": 61,
+      "product_name": "Test Product",
+      "category": "Snacks",
+      "stock": 100,
+      "selling_price": 75.0,
+      "margin_pct": 33.33,
+      "daily_velocity": 40.9333,
+      "supplier": "Test Supplier"
+    }
+  },
+  {
+    "page_content": "Category Overview: Tea & Beverages\n\nRevenue Performance: The Tea & Beverages category generated total revenue of Rs. 6,601,659 with a profit of Rs. 1,428,594.\n\nProfitability: Average profit margin for Tea & Beverages products is 21.64%. This category contributes 20.16% of total store revenue.\n\nSales Volume: A total of 22500 units were sold across all Tea & Beverages products.\n\nTop Performer: The best selling product in Tea & Beverages is Tapal Danedar 200g.\n\nBusiness Insight: Tea & Beverages is performing steadily. Monitor for seasonal demand shifts common in Pakistani retail markets.",
+    "metadata": {
+      "doc_type": "category",
+      "category": "Tea & Beverages",
+      "total_revenue": 6601659.33,
+      "margin_pct": 21.64,
+      "revenue_share_pct": 20.16,
+      "units_sold": 22500
+    }
+  },
+  {
+    "page_content": "Category Overview: Detergents\n\nRevenue Performance: The Detergents category generated total revenue of Rs. 3,905,809 with a profit of Rs. 871,294.\n\nProfitability: Average profit margin for Detergents products is 22.31%. This category contributes 11.93% of total store revenue.\n\nSales Volume: A total of 10125 units were sold across all Detergents products.\n\nTop Performer: The best selling product in Detergents is Surf Excel 500g.\n\nBusiness Insight: Detergents is performing steadily. Monitor for seasonal demand shifts common in Pakistani retail markets.",
+    "metadata": {
+      "doc_type": "category",
+      "category": "Detergents",
+      "total_revenue": 3905809.41,
+      "margin_pct": 22.31,
+      "revenue_share_pct": 11.93,
+      "units_sold": 10125
+    }
+  },
+  {
+    "page_content": "Category Overview: Dairy\n\nRevenue Performance: The Dairy category generated total revenue of Rs. 3,757,817 with a profit of Rs. 879,446.\n\nProfitability: Average profit margin for Dairy products is 23.40%. This category contributes 11.48% of total store revenue.\n\nSales Volume: A total of 19239 units were sold across all Dairy products.\n\nTop Performer: The best selling product in Dairy is Nestle MilkPak 1L.\n\nBusiness Insight: Dairy is performing steadily. Monitor for seasonal demand shifts common in Pakistani retail markets.",
+    "metadata": {
+      "doc_type": "category",
+      "category": "Dairy",
+      "total_revenue": 3757816.74,
+      "margin_pct": 23.4,
+      "revenue_share_pct": 11.48,
+      "units_sold": 19239
+    }
+  },
+  {
+    "page_content": "Category Overview: Cooking Oil\n\nRevenue Performance: The Cooking Oil category generated total revenue of Rs. 3,737,050 with a profit of Rs. 714,325.\n\nProfitability: Average profit margin for Cooking Oil products is 19.11%. This category contributes 11.41% of total store revenue.\n\nSales Volume: A total of 7623 units were sold across all Cooking Oil products.\n\nTop Performer: The best selling product in Cooking Oil is Sufi Cooking Oil 1L.\n\nBusiness Insight: Cooking Oil is performing steadily. Monitor for seasonal demand shifts common in Pakistani retail markets.",
+    "metadata": {
+      "doc_type": "category",
+      "category": "Cooking Oil",
+      "total_revenue": 3737050.14,
+      "margin_pct": 19.11,
+      "revenue_share_pct": 11.41,
+      "units_sold": 7623
+    }
+  },
+  {
+    "page_content": "Category Overview: Beverages\n\nRevenue Performance: The Beverages category generated total revenue of Rs. 3,598,385 with a profit of Rs. 954,428.\n\nProfitability: Average profit margin for Beverages products is 26.52%. This category contributes 10.99% of total store revenue.\n\nSales Volume: A total of 26721 units were sold across all Beverages products.\n\nTop Performer: The best selling product in Beverages is Pepsi 1.5L.\n\nBusiness Insight: Beverages is performing steadily. Monitor for seasonal demand shifts common in Pakistani retail markets.",
+    "metadata": {
+      "doc_type": "category",
+      "category": "Beverages",
+      "total_revenue": 3598385.28,
+      "margin_pct": 26.52,
+      "revenue_share_pct": 10.99,
+      "units_sold": 26721
+    }
+  },
+  {
+    "page_content": "Category Overview: Personal Care\n\nRevenue Performance: The Personal Care category generated total revenue of Rs. 2,925,017 with a profit of Rs. 817,295.\n\nProfitability: Average profit margin for Personal Care products is 27.94%. This category contributes 8.93% of total store revenue.\n\nSales Volume: A total of 21060 units were sold across all Personal Care products.\n\nTop Performer: The best selling product in Personal Care is Lux Soap 150g.\n\nBusiness Insight: Personal Care is performing steadily. Monitor for seasonal demand shifts common in Pakistani retail markets.",
+    "metadata": {
+      "doc_type": "category",
+      "category": "Personal Care",
+      "total_revenue": 2925017.22,
+      "margin_pct": 27.94,
+      "revenue_share_pct": 8.93,
+      "units_sold": 21060
+    }
+  },
+  {
+    "page_content": "Category Overview: Instant Food\n\nRevenue Performance: The Instant Food category generated total revenue of Rs. 2,439,593 with a profit of Rs. 706,010.\n\nProfitability: Average profit margin for Instant Food products is 28.94%. This category contributes 7.45% of total store revenue.\n\nSales Volume: A total of 25587 units were sold across all Instant Food products.\n\nTop Performer: The best selling product in Instant Food is Knorr Chicken Noodles 66g.\n\nBusiness Insight: Instant Food is a high-margin category. Expanding the product range here would directly increase overall store profitability.",
+    "metadata": {
+      "doc_type": "category",
+      "category": "Instant Food",
+      "total_revenue": 2439593.4,
+      "margin_pct": 28.94,
+      "revenue_share_pct": 7.45,
+      "units_sold": 25587
+    }
+  },
+  {
+    "page_content": "Category Overview: Snacks\n\nRevenue Performance: The Snacks category generated total revenue of Rs. 2,360,329 with a profit of Rs. 766,571.\n\nProfitability: Average profit margin for Snacks products is 32.48%. This category contributes 7.21% of total store revenue.\n\nSales Volume: A total of 32938 units were sold across all Snacks products.\n\nTop Performer: The best selling product in Snacks is Lays Classic 34g.\n\nBusiness Insight: Snacks is a high-margin category. Expanding the product range here would directly increase overall store profitability.",
+    "metadata": {
+      "doc_type": "category",
+      "category": "Snacks",
+      "total_revenue": 2360329.02,
+      "margin_pct": 32.48,
+      "revenue_share_pct": 7.21,
+      "units_sold": 32938
+    }
+  },
+  {
+    "page_content": "Category Overview: Spices & Masala\n\nRevenue Performance: The Spices & Masala category generated total revenue of Rs. 2,118,436 with a profit of Rs. 503,833.\n\nProfitability: Average profit margin for Spices & Masala products is 23.78%. This category contributes 6.47% of total store revenue.\n\nSales Volume: A total of 23508 units were sold across all Spices & Masala products.\n\nTop Performer: The best selling product in Spices & Masala is Shan Biryani Masala 60g.\n\nBusiness Insight: Spices & Masala is performing steadily. Monitor for seasonal demand shifts common in Pakistani retail markets.",
+    "metadata": {
+      "doc_type": "category",
+      "category": "Spices & Masala",
+      "total_revenue": 2118436.38,
+      "margin_pct": 23.78,
+      "revenue_share_pct": 6.47,
+      "units_sold": 23508
+    }
+  },
+  {
+    "page_content": "Category Overview: Condiments\n\nRevenue Performance: The Condiments category generated total revenue of Rs. 1,294,235 with a profit of Rs. 323,933.\n\nProfitability: Average profit margin for Condiments products is 25.03%. This category contributes 3.95% of total store revenue.\n\nSales Volume: A total of 6603 units were sold across all Condiments products.\n\nTop Performer: The best selling product in Condiments is National Chilli Sauce 300g.\n\nBusiness Insight: Condiments is performing steadily. Monitor for seasonal demand shifts common in Pakistani retail markets.",
+    "metadata": {
+      "doc_type": "category",
+      "category": "Condiments",
+      "total_revenue": 1294235.16,
+      "margin_pct": 25.03,
+      "revenue_share_pct": 3.95,
+      "units_sold": 6603
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Dalda Cooking Oil 1L\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Cooking Oil\nSupplier: Dalda Foods\n\nStock Details: 45 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 17,775. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Dalda Cooking Oil 1L. Consider discounting to clear stock, or return unsold units to Dalda Foods if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Dalda Cooking Oil 1L",
+      "category": "Cooking Oil",
+      "current_stock": 45,
+      "units_sold": 0,
+      "capital_locked": 17775.0,
+      "supplier": "Dalda Foods"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Surf Excel 1kg\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Detergents\nSupplier: Unilever Pakistan\n\nStock Details: 30 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 17,700. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Surf Excel 1kg. Consider discounting to clear stock, or return unsold units to Unilever Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Surf Excel 1kg",
+      "category": "Detergents",
+      "current_stock": 30,
+      "units_sold": 0,
+      "capital_locked": 17700.0,
+      "supplier": "Unilever Pakistan"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Tapal Danedar 500g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Tea & Beverages\nSupplier: Tapal Foods\n\nStock Details: 40 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 17,200. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Tapal Danedar 500g. Consider discounting to clear stock, or return unsold units to Tapal Foods if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Tapal Danedar 500g",
+      "category": "Tea & Beverages",
+      "current_stock": 40,
+      "units_sold": 0,
+      "capital_locked": 17200.0,
+      "supplier": "Tapal Foods"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Sufi Cooking Oil 1L\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Cooking Oil\nSupplier: Sufi Group\n\nStock Details: 40 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 15,400. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Sufi Cooking Oil 1L. Consider discounting to clear stock, or return unsold units to Sufi Group if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Sufi Cooking Oil 1L",
+      "category": "Cooking Oil",
+      "current_stock": 40,
+      "units_sold": 0,
+      "capital_locked": 15400.0,
+      "supplier": "Sufi Group"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Bonus Washing Powder 1kg\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Detergents\nSupplier: Colgate-Palmolive\n\nStock Details: 60 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 13,500. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Bonus Washing Powder 1kg. Consider discounting to clear stock, or return unsold units to Colgate-Palmolive if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Bonus Washing Powder 1kg",
+      "category": "Detergents",
+      "current_stock": 60,
+      "units_sold": 0,
+      "capital_locked": 13500.0,
+      "supplier": "Colgate-Palmolive"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Nestle Milo 400g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Tea & Beverages\nSupplier: Nestle Pakistan\n\nStock Details: 25 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 13,250. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Nestle Milo 400g. Consider discounting to clear stock, or return unsold units to Nestle Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Nestle Milo 400g",
+      "category": "Tea & Beverages",
+      "current_stock": 25,
+      "units_sold": 0,
+      "capital_locked": 13250.0,
+      "supplier": "Nestle Pakistan"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Habib Cooking Oil 1L\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Cooking Oil\nSupplier: Habib Oil\n\nStock Details: 35 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 13,230. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Habib Cooking Oil 1L. Consider discounting to clear stock, or return unsold units to Habib Oil if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Habib Cooking Oil 1L",
+      "category": "Cooking Oil",
+      "current_stock": 35,
+      "units_sold": 0,
+      "capital_locked": 13230.0,
+      "supplier": "Habib Oil"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Dalda Banaspati 1kg\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Cooking Oil\nSupplier: Dalda Foods\n\nStock Details: 30 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 13,050. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Dalda Banaspati 1kg. Consider discounting to clear stock, or return unsold units to Dalda Foods if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Dalda Banaspati 1kg",
+      "category": "Cooking Oil",
+      "current_stock": 30,
+      "units_sold": 0,
+      "capital_locked": 13050.0,
+      "supplier": "Dalda Foods"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Seasons Canola Oil 1L\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Cooking Oil\nSupplier: Seasons\n\nStock Details: 25 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 10,375. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Seasons Canola Oil 1L. Consider discounting to clear stock, or return unsold units to Seasons if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Seasons Canola Oil 1L",
+      "category": "Cooking Oil",
+      "current_stock": 25,
+      "units_sold": 0,
+      "capital_locked": 10375.0,
+      "supplier": "Seasons"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Ariel 500g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Detergents\nSupplier: P&G Pakistan\n\nStock Details: 35 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 10,325. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Ariel 500g. Consider discounting to clear stock, or return unsold units to P&G Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Ariel 500g",
+      "category": "Detergents",
+      "current_stock": 35,
+      "units_sold": 0,
+      "capital_locked": 10325.0,
+      "supplier": "P&G Pakistan"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Peek Freans Sooper 112g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Snacks\nSupplier: EBM\n\nStock Details: 150 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 10,200. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Peek Freans Sooper 112g. Consider discounting to clear stock, or return unsold units to EBM if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Peek Freans Sooper 112g",
+      "category": "Snacks",
+      "current_stock": 150,
+      "units_sold": 0,
+      "capital_locked": 10200.0,
+      "supplier": "EBM"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Lipton Yellow Label 200g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Tea & Beverages\nSupplier: Unilever Pakistan\n\nStock Details: 50 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 9,750. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Lipton Yellow Label 200g. Consider discounting to clear stock, or return unsold units to Unilever Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Lipton Yellow Label 200g",
+      "category": "Tea & Beverages",
+      "current_stock": 50,
+      "units_sold": 0,
+      "capital_locked": 9750.0,
+      "supplier": "Unilever Pakistan"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Brite Detergent 500g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Detergents\nSupplier: Colgate-Palmolive\n\nStock Details: 55 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 9,625. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Brite Detergent 500g. Consider discounting to clear stock, or return unsold units to Colgate-Palmolive if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Brite Detergent 500g",
+      "category": "Detergents",
+      "current_stock": 55,
+      "units_sold": 0,
+      "capital_locked": 9625.0,
+      "supplier": "Colgate-Palmolive"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Nescafe Classic 50g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Tea & Beverages\nSupplier: Nestle Pakistan\n\nStock Details: 30 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 9,600. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Nescafe Classic 50g. Consider discounting to clear stock, or return unsold units to Nestle Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Nescafe Classic 50g",
+      "category": "Tea & Beverages",
+      "current_stock": 30,
+      "units_sold": 0,
+      "capital_locked": 9600.0,
+      "supplier": "Nestle Pakistan"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Safeguard Soap 175g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Personal Care\nSupplier: P&G Pakistan\n\nStock Details: 100 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 9,500. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Safeguard Soap 175g. Consider discounting to clear stock, or return unsold units to P&G Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Safeguard Soap 175g",
+      "category": "Personal Care",
+      "current_stock": 100,
+      "units_sold": 0,
+      "capital_locked": 9500.0,
+      "supplier": "P&G Pakistan"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Dettol Soap 175g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Personal Care\nSupplier: Reckitt Pakistan\n\nStock Details: 90 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 8,820. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Dettol Soap 175g. Consider discounting to clear stock, or return unsold units to Reckitt Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Dettol Soap 175g",
+      "category": "Personal Care",
+      "current_stock": 90,
+      "units_sold": 0,
+      "capital_locked": 8820.0,
+      "supplier": "Reckitt Pakistan"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Knorr Masala Noodles 66g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Instant Food\nSupplier: Unilever Pakistan\n\nStock Details: 160 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 8,800. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Knorr Masala Noodles 66g. Consider discounting to clear stock, or return unsold units to Unilever Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Knorr Masala Noodles 66g",
+      "category": "Instant Food",
+      "current_stock": 160,
+      "units_sold": 0,
+      "capital_locked": 8800.0,
+      "supplier": "Unilever Pakistan"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Lays Classic 34g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Snacks\nSupplier: PepsiCo Pakistan\n\nStock Details: 220 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 8,800. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Lays Classic 34g. Consider discounting to clear stock, or return unsold units to PepsiCo Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Lays Classic 34g",
+      "category": "Snacks",
+      "current_stock": 220,
+      "units_sold": 0,
+      "capital_locked": 8800.0,
+      "supplier": "PepsiCo Pakistan"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Kolson Slanty 30g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Snacks\nSupplier: Kolson\n\nStock Details: 200 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 8,400. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Kolson Slanty 30g. Consider discounting to clear stock, or return unsold units to Kolson if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Kolson Slanty 30g",
+      "category": "Snacks",
+      "current_stock": 200,
+      "units_sold": 0,
+      "capital_locked": 8400.0,
+      "supplier": "Kolson"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Dettol Antiseptic 60ml\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Personal Care\nSupplier: Reckitt Pakistan\n\nStock Details: 65 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 8,320. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Dettol Antiseptic 60ml. Consider discounting to clear stock, or return unsold units to Reckitt Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Dettol Antiseptic 60ml",
+      "category": "Personal Care",
+      "current_stock": 65,
+      "units_sold": 0,
+      "capital_locked": 8320.0,
+      "supplier": "Reckitt Pakistan"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: National Ketchup 300g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Instant Food\nSupplier: National Foods\n\nStock Details: 70 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 8,260. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering National Ketchup 300g. Consider discounting to clear stock, or return unsold units to National Foods if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "National Ketchup 300g",
+      "category": "Instant Food",
+      "current_stock": 70,
+      "units_sold": 0,
+      "capital_locked": 8260.0,
+      "supplier": "National Foods"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Tang Orange 500g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Tea & Beverages\nSupplier: Mondelez Pakistan\n\nStock Details: 45 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 8,010. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Tang Orange 500g. Consider discounting to clear stock, or return unsold units to Mondelez Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Tang Orange 500g",
+      "category": "Tea & Beverages",
+      "current_stock": 45,
+      "units_sold": 0,
+      "capital_locked": 8010.0,
+      "supplier": "Mondelez Pakistan"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Knorr Ketchup 300g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Instant Food\nSupplier: Unilever Pakistan\n\nStock Details: 65 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 7,930. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Knorr Ketchup 300g. Consider discounting to clear stock, or return unsold units to Unilever Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Knorr Ketchup 300g",
+      "category": "Instant Food",
+      "current_stock": 65,
+      "units_sold": 0,
+      "capital_locked": 7930.0,
+      "supplier": "Unilever Pakistan"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Sunsilk Shampoo 180ml\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Personal Care\nSupplier: Unilever Pakistan\n\nStock Details: 40 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 7,920. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Sunsilk Shampoo 180ml. Consider discounting to clear stock, or return unsold units to Unilever Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Sunsilk Shampoo 180ml",
+      "category": "Personal Care",
+      "current_stock": 40,
+      "units_sold": 0,
+      "capital_locked": 7920.0,
+      "supplier": "Unilever Pakistan"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: English Biscuits 100g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Snacks\nSupplier: EBM\n\nStock Details: 130 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 7,150. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering English Biscuits 100g. Consider discounting to clear stock, or return unsold units to EBM if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "English Biscuits 100g",
+      "category": "Snacks",
+      "current_stock": 130,
+      "units_sold": 0,
+      "capital_locked": 7150.0,
+      "supplier": "EBM"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Close Up 80ml\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Personal Care\nSupplier: Unilever Pakistan\n\nStock Details: 75 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 7,125. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Close Up 80ml. Consider discounting to clear stock, or return unsold units to Unilever Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Close Up 80ml",
+      "category": "Personal Care",
+      "current_stock": 75,
+      "units_sold": 0,
+      "capital_locked": 7125.0,
+      "supplier": "Unilever Pakistan"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Haleeb Milk 1L\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Dairy\nSupplier: Haleeb Foods\n\nStock Details: 45 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 7,110. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Haleeb Milk 1L. Consider discounting to clear stock, or return unsold units to Haleeb Foods if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Haleeb Milk 1L",
+      "category": "Dairy",
+      "current_stock": 45,
+      "units_sold": 0,
+      "capital_locked": 7110.0,
+      "supplier": "Haleeb Foods"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Peek Freans Rio 90g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Snacks\nSupplier: EBM\n\nStock Details: 120 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 6,960. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Peek Freans Rio 90g. Consider discounting to clear stock, or return unsold units to EBM if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Peek Freans Rio 90g",
+      "category": "Snacks",
+      "current_stock": 120,
+      "units_sold": 0,
+      "capital_locked": 6960.0,
+      "supplier": "EBM"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Rooh Afza 800ml\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Tea & Beverages\nSupplier: Hamdard\n\nStock Details: 20 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 6,900. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Rooh Afza 800ml. Consider discounting to clear stock, or return unsold units to Hamdard if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Rooh Afza 800ml",
+      "category": "Tea & Beverages",
+      "current_stock": 20,
+      "units_sold": 0,
+      "capital_locked": 6900.0,
+      "supplier": "Hamdard"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Indomie Noodles 70g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Instant Food\nSupplier: Kolson\n\nStock Details: 140 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 6,720. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Indomie Noodles 70g. Consider discounting to clear stock, or return unsold units to Kolson if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Indomie Noodles 70g",
+      "category": "Instant Food",
+      "current_stock": 140,
+      "units_sold": 0,
+      "capital_locked": 6720.0,
+      "supplier": "Kolson"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Sprite 345ml Can\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Beverages\nSupplier: Coca-Cola Pakistan\n\nStock Details: 80 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 6,560. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Sprite 345ml Can. Consider discounting to clear stock, or return unsold units to Coca-Cola Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Sprite 345ml Can",
+      "category": "Beverages",
+      "current_stock": 80,
+      "units_sold": 0,
+      "capital_locked": 6560.0,
+      "supplier": "Coca-Cola Pakistan"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Coca Cola 1.5L\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Beverages\nSupplier: Coca-Cola Pakistan\n\nStock Details: 55 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 6,490. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Coca Cola 1.5L. Consider discounting to clear stock, or return unsold units to Coca-Cola Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Coca Cola 1.5L",
+      "category": "Beverages",
+      "current_stock": 55,
+      "units_sold": 0,
+      "capital_locked": 6490.0,
+      "supplier": "Coca-Cola Pakistan"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: National Mango Pickle 400g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Condiments\nSupplier: National Foods\n\nStock Details: 40 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 6,480. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering National Mango Pickle 400g. Consider discounting to clear stock, or return unsold units to National Foods if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "National Mango Pickle 400g",
+      "category": "Condiments",
+      "current_stock": 40,
+      "units_sold": 0,
+      "capital_locked": 6480.0,
+      "supplier": "National Foods"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Shan Karahi Masala 50g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Spices & Masala\nSupplier: Shan Foods\n\nStock Details: 95 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 6,460. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Shan Karahi Masala 50g. Consider discounting to clear stock, or return unsold units to Shan Foods if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Shan Karahi Masala 50g",
+      "category": "Spices & Masala",
+      "current_stock": 95,
+      "units_sold": 0,
+      "capital_locked": 6460.0,
+      "supplier": "Shan Foods"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Lifebuoy Soap 135g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Personal Care\nSupplier: Unilever Pakistan\n\nStock Details: 85 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 6,375. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Lifebuoy Soap 135g. Consider discounting to clear stock, or return unsold units to Unilever Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Lifebuoy Soap 135g",
+      "category": "Personal Care",
+      "current_stock": 85,
+      "units_sold": 0,
+      "capital_locked": 6375.0,
+      "supplier": "Unilever Pakistan"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Candyland Cocomo 40g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Snacks\nSupplier: Candyland\n\nStock Details: 180 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 6,300. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Candyland Cocomo 40g. Consider discounting to clear stock, or return unsold units to Candyland if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Candyland Cocomo 40g",
+      "category": "Snacks",
+      "current_stock": 180,
+      "units_sold": 0,
+      "capital_locked": 6300.0,
+      "supplier": "Candyland"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Bisconni Choc Chip 82g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Snacks\nSupplier: Bisconni\n\nStock Details: 100 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 6,200. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Bisconni Choc Chip 82g. Consider discounting to clear stock, or return unsold units to Bisconni if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Bisconni Choc Chip 82g",
+      "category": "Snacks",
+      "current_stock": 100,
+      "units_sold": 0,
+      "capital_locked": 6200.0,
+      "supplier": "Bisconni"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Shan Soup Mix 60g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Instant Food\nSupplier: Shan Foods\n\nStock Details: 90 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 6,120. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Shan Soup Mix 60g. Consider discounting to clear stock, or return unsold units to Shan Foods if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Shan Soup Mix 60g",
+      "category": "Instant Food",
+      "current_stock": 90,
+      "units_sold": 0,
+      "capital_locked": 6120.0,
+      "supplier": "Shan Foods"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Shan Mixed Pickle 400g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Condiments\nSupplier: Shan Foods\n\nStock Details: 38 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 6,004. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Shan Mixed Pickle 400g. Consider discounting to clear stock, or return unsold units to Shan Foods if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Shan Mixed Pickle 400g",
+      "category": "Condiments",
+      "current_stock": 38,
+      "units_sold": 0,
+      "capital_locked": 6004.0,
+      "supplier": "Shan Foods"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: 7UP 1.5L\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Beverages\nSupplier: PepsiCo Pakistan\n\nStock Details: 50 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 5,600. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering 7UP 1.5L. Consider discounting to clear stock, or return unsold units to PepsiCo Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "7UP 1.5L",
+      "category": "Beverages",
+      "current_stock": 50,
+      "units_sold": 0,
+      "capital_locked": 5600.0,
+      "supplier": "PepsiCo Pakistan"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Shan Nihari Masala 60g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Spices & Masala\nSupplier: Shan Foods\n\nStock Details: 80 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 5,600. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Shan Nihari Masala 60g. Consider discounting to clear stock, or return unsold units to Shan Foods if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Shan Nihari Masala 60g",
+      "category": "Spices & Masala",
+      "current_stock": 80,
+      "units_sold": 0,
+      "capital_locked": 5600.0,
+      "supplier": "Shan Foods"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Surf Excel 500g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Detergents\nSupplier: Unilever Pakistan\n\nStock Details: 18 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 5,580. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Surf Excel 500g. Consider discounting to clear stock, or return unsold units to Unilever Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Surf Excel 500g",
+      "category": "Detergents",
+      "current_stock": 18,
+      "units_sold": 0,
+      "capital_locked": 5580.0,
+      "supplier": "Unilever Pakistan"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: National Chilli Sauce 300g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Condiments\nSupplier: National Foods\n\nStock Details: 45 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 5,490. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering National Chilli Sauce 300g. Consider discounting to clear stock, or return unsold units to National Foods if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "National Chilli Sauce 300g",
+      "category": "Condiments",
+      "current_stock": 45,
+      "units_sold": 0,
+      "capital_locked": 5490.0,
+      "supplier": "National Foods"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Tapal Family Mixture 95g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Tea & Beverages\nSupplier: Tapal Foods\n\nStock Details: 60 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 5,280. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Tapal Family Mixture 95g. Consider discounting to clear stock, or return unsold units to Tapal Foods if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Tapal Family Mixture 95g",
+      "category": "Tea & Beverages",
+      "current_stock": 60,
+      "units_sold": 0,
+      "capital_locked": 5280.0,
+      "supplier": "Tapal Foods"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Ahmed Chaat Masala 100g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Spices & Masala\nSupplier: Ahmed Foods\n\nStock Details: 90 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 5,220. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Ahmed Chaat Masala 100g. Consider discounting to clear stock, or return unsold units to Ahmed Foods if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Ahmed Chaat Masala 100g",
+      "category": "Spices & Masala",
+      "current_stock": 90,
+      "units_sold": 0,
+      "capital_locked": 5220.0,
+      "supplier": "Ahmed Foods"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Test Product\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Snacks\nSupplier: Test Supplier\n\nStock Details: 100 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 5,000. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Test Product. Consider discounting to clear stock, or return unsold units to Test Supplier if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Test Product",
+      "category": "Snacks",
+      "current_stock": 100,
+      "units_sold": 0,
+      "capital_locked": 5000.0,
+      "supplier": "Test Supplier"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: National Biryani Masala 55g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Spices & Masala\nSupplier: National Foods\n\nStock Details: 70 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 4,900. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering National Biryani Masala 55g. Consider discounting to clear stock, or return unsold units to National Foods if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "National Biryani Masala 55g",
+      "category": "Spices & Masala",
+      "current_stock": 70,
+      "units_sold": 0,
+      "capital_locked": 4900.0,
+      "supplier": "National Foods"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Pakola Ice Cream Soda 250ml\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Beverages\nSupplier: Mehran Bottlers\n\nStock Details: 100 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 4,800. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Pakola Ice Cream Soda 250ml. Consider discounting to clear stock, or return unsold units to Mehran Bottlers if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Pakola Ice Cream Soda 250ml",
+      "category": "Beverages",
+      "current_stock": 100,
+      "units_sold": 0,
+      "capital_locked": 4800.0,
+      "supplier": "Mehran Bottlers"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Mehran Tikka Masala 50g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Spices & Masala\nSupplier: Mehran Foods\n\nStock Details: 75 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 4,500. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Mehran Tikka Masala 50g. Consider discounting to clear stock, or return unsold units to Mehran Foods if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Mehran Tikka Masala 50g",
+      "category": "Spices & Masala",
+      "current_stock": 75,
+      "units_sold": 0,
+      "capital_locked": 4500.0,
+      "supplier": "Mehran Foods"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: National Karahi Masala 50g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Spices & Masala\nSupplier: National Foods\n\nStock Details: 65 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 4,225. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering National Karahi Masala 50g. Consider discounting to clear stock, or return unsold units to National Foods if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "National Karahi Masala 50g",
+      "category": "Spices & Masala",
+      "current_stock": 65,
+      "units_sold": 0,
+      "capital_locked": 4225.0,
+      "supplier": "National Foods"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Nestle Cream 200ml\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Dairy\nSupplier: Nestle Pakistan\n\nStock Details: 35 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 4,130. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Nestle Cream 200ml. Consider discounting to clear stock, or return unsold units to Nestle Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Nestle Cream 200ml",
+      "category": "Dairy",
+      "current_stock": 35,
+      "units_sold": 0,
+      "capital_locked": 4130.0,
+      "supplier": "Nestle Pakistan"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Good Milk Yogurt 400g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Dairy\nSupplier: Good Milk\n\nStock Details: 40 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 3,520. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Good Milk Yogurt 400g. Consider discounting to clear stock, or return unsold units to Good Milk if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Good Milk Yogurt 400g",
+      "category": "Dairy",
+      "current_stock": 40,
+      "units_sold": 0,
+      "capital_locked": 3520.0,
+      "supplier": "Good Milk"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Olpers Cream 200ml\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Dairy\nSupplier: Engro Foods\n\nStock Details: 30 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 3,360. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Olpers Cream 200ml. Consider discounting to clear stock, or return unsold units to Engro Foods if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Olpers Cream 200ml",
+      "category": "Dairy",
+      "current_stock": 30,
+      "units_sold": 0,
+      "capital_locked": 3360.0,
+      "supplier": "Engro Foods"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Olpers Milk 1L\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Dairy\nSupplier: Engro Foods\n\nStock Details: 19 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 3,135. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Olpers Milk 1L. Consider discounting to clear stock, or return unsold units to Engro Foods if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Olpers Milk 1L",
+      "category": "Dairy",
+      "current_stock": 19,
+      "units_sold": 0,
+      "capital_locked": 3135.0,
+      "supplier": "Engro Foods"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Colgate Total 75ml\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Personal Care\nSupplier: Colgate-Palmolive\n\nStock Details: 15 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 1,680. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Colgate Total 75ml. Consider discounting to clear stock, or return unsold units to Colgate-Palmolive if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Colgate Total 75ml",
+      "category": "Personal Care",
+      "current_stock": 15,
+      "units_sold": 0,
+      "capital_locked": 1680.0,
+      "supplier": "Colgate-Palmolive"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Shan Biryani Masala 60g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Spices & Masala\nSupplier: Shan Foods\n\nStock Details: 22 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 1,650. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Shan Biryani Masala 60g. Consider discounting to clear stock, or return unsold units to Shan Foods if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Shan Biryani Masala 60g",
+      "category": "Spices & Masala",
+      "current_stock": 22,
+      "units_sold": 0,
+      "capital_locked": 1650.0,
+      "supplier": "Shan Foods"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Nestle MilkPak 1L\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Dairy\nSupplier: Nestle Pakistan\n\nStock Details: 7 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 1,204. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Nestle MilkPak 1L. Consider discounting to clear stock, or return unsold units to Nestle Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Nestle MilkPak 1L",
+      "category": "Dairy",
+      "current_stock": 7,
+      "units_sold": 0,
+      "capital_locked": 1204.0,
+      "supplier": "Nestle Pakistan"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Tapal Danedar 200g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Tea & Beverages\nSupplier: Tapal Foods\n\nStock Details: 4 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 740. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Tapal Danedar 200g. Consider discounting to clear stock, or return unsold units to Tapal Foods if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Tapal Danedar 200g",
+      "category": "Tea & Beverages",
+      "current_stock": 4,
+      "units_sold": 0,
+      "capital_locked": 740.0,
+      "supplier": "Tapal Foods"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Pepsi 1.5L\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Beverages\nSupplier: PepsiCo Pakistan\n\nStock Details: 5 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 575. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Pepsi 1.5L. Consider discounting to clear stock, or return unsold units to PepsiCo Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Pepsi 1.5L",
+      "category": "Beverages",
+      "current_stock": 5,
+      "units_sold": 0,
+      "capital_locked": 575.0,
+      "supplier": "PepsiCo Pakistan"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Knorr Chicken Noodles 66g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Instant Food\nSupplier: Unilever Pakistan\n\nStock Details: 6 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 330. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Knorr Chicken Noodles 66g. Consider discounting to clear stock, or return unsold units to Unilever Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Knorr Chicken Noodles 66g",
+      "category": "Instant Food",
+      "current_stock": 6,
+      "units_sold": 0,
+      "capital_locked": 330.0,
+      "supplier": "Unilever Pakistan"
+    }
+  },
+  {
+    "page_content": "INVENTORY ALERT — DEAD STOCK: Lux Soap 150g\n\nStatus: DEAD STOCK — this product has not been selling.\nCategory: Personal Care\nSupplier: Unilever Pakistan\n\nStock Details: 3 units are sitting unsold in inventory. Only 0 units were sold in the last 30 days. Daily sales velocity is 0.00 units per day.\n\nFinancial Impact: Capital locked in this dead stock is Rs. 255. This money could be used for faster-moving products.\n\nRecommended Action: Stop reordering Lux Soap 150g. Consider discounting to clear stock, or return unsold units to Unilever Pakistan if possible.",
+    "metadata": {
+      "doc_type": "inventory_alert",
+      "alert_type": "dead_stock",
+      "product_name": "Lux Soap 150g",
+      "category": "Personal Care",
+      "current_stock": 3,
+      "units_sold": 0,
+      "capital_locked": 255.0,
+      "supplier": "Unilever Pakistan"
+    }
+  },
+  {
+    "page_content": "Store Performance Overview — AI Retail Intelligence Summary\n\nOverall Financials: The store has generated total revenue of Rs. 32,738,332 with a net profit of Rs. 7,965,731. Overall profit margin is 24.33%.\n\nSales Activity: Total units sold: 195,904. Average order value: Rs. 445.\n\nInventory Overview: The store carries 61 products with 3,937 total units in stock. Current inventory is valued at Rs. 589,675.\n\nBusiness Health: The store has an acceptable profit margin. Review high-margin categories and consider expanding them to push overall margins above 25%.",
+    "metadata": {
+      "doc_type": "store_analytics",
+      "analytics_type": "kpi_overview",
+      "total_revenue": 32738332.08,
+      "total_profit": 7965731.08,
+      "overall_margin_pct": 24.33,
+      "generated_at": "2026-08-02T14:31:51.594401"
+    }
+  },
+  {
+    "page_content": "Weekly Revenue Performance — Last 4 Weeks\n\nWeek of 2024-12-15 00:00:00: Revenue Rs. 563,711, Profit Rs. 137,223, Margin 24.34%\nWeek of 2024-12-22 00:00:00: Revenue Rs. 543,257, Profit Rs. 132,038, Margin 24.30%\nWeek of 2024-12-29 00:00:00: Revenue Rs. 460,607, Profit Rs. 111,898, Margin 24.29%\nWeek of 2025-01-05 00:00:00: Revenue Rs. 111,322, Profit Rs. 27,200, Margin 24.43%\n\nTrend Analysis: Revenue is decreasing — 75.8% compared to previous week.\n\nThis data covers the most recent 4 weeks of store operations and reflects actual transaction records.",
+    "metadata": {
+      "doc_type": "store_analytics",
+      "analytics_type": "weekly_revenue",
+      "weeks_covered": 4,
+      "generated_at": "2026-08-02T14:31:52.544567"
+    }
+  },
+  {
+    "page_content": "Category Performance Summary\n\nRevenue by Category:\nTea & Beverages: Revenue Rs. 6,601,659, Margin 21.64%, Share 20.16% of total\nDetergents: Revenue Rs. 3,905,809, Margin 22.31%, Share 11.93% of total\nDairy: Revenue Rs. 3,757,817, Margin 23.40%, Share 11.48% of total\nCooking Oil: Revenue Rs. 3,737,050, Margin 19.11%, Share 11.41% of total\nBeverages: Revenue Rs. 3,598,385, Margin 26.52%, Share 10.99% of total\nPersonal Care: Revenue Rs. 2,925,017, Margin 27.94%, Share 8.93% of total\nInstant Food: Revenue Rs. 2,439,593, Margin 28.94%, Share 7.45% of total\nSnacks: Revenue Rs. 2,360,329, Margin 32.48%, Share 7.21% of total\nSpices & Masala: Revenue Rs. 2,118,436, Margin 23.78%, Share 6.47% of total\nCondiments: Revenue Rs. 1,294,235, Margin 25.03%, Share 3.95% of total\n\nTop Category: Tea & Beverages leads with Rs. 6,601,659 revenue and 21.64% margin.\n\nLowest Performer: Condiments contributes only 3.95% of total revenue.\n\nStrategic Insight: Focus on expanding Tea & Beverages products as they drive the most store income.",
+    "metadata": {
+      "doc_type": "store_analytics",
+      "analytics_type": "category_performance",
+      "top_category": "Tea & Beverages",
+      "categories_covered": 10,
+      "generated_at": "2026-08-02T14:31:53.276692"
+    }
+  }
+]
