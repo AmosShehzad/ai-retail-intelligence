@@ -159,7 +159,7 @@ def get_store_kpis() -> dict:
         "total_products"       : int(product_count),
         "total_stock_units"    : int(total_stock_units or 0),
         "current_inventory_value": round(inventory_value or 0, 2),
-        "avg_order_value"      : round(df["revenue"].sum() / df["sale_id"].nunique(), 2),
+        "avg_order_value"      : round(df["revenue"].sum() / df["sale_id"].nunique(), 2) if df["sale_id"].nunique() > 0 else 0.0,
     }
 
 # ── Run all (for manual testing) ──────────────────────────────────────────────
