@@ -104,13 +104,20 @@ def get_product_velocity(top_n: int = 10) -> dict:
     product_stats = df.groupby(["product_id", "product_name", "category"]).agg(
         total_units_sold = ("quantity", "sum"),
         total_revenue    = ("revenue", "sum"),
-        days_active       = ("sale_date", lambda x: (x.max() - x.min()).days + 1),
+        days_active       = ("sale_date", lambda x: int((x.max() - x.min()).days) + 1),
     ).reset_index()
+
+    # Force days_active to a clean numeric type — on some pandas versions,
+    # this named-agg lambda over a datetime column can be inferred as a
+    # datetime-typed array instead of plain integers, which breaks division.
+    product_stats["days_active"] = pd.to_numeric(
+        product_stats["days_active"], errors="coerce"
+    ).fillna(1).astype(int)
 
     product_stats["units_per_day"] = (
         product_stats["total_units_sold"] / product_stats["days_active"]
     ).round(2)
-
+    
     top_sellers = product_stats.sort_values("units_per_day", ascending=False).head(top_n)
     slow_movers = product_stats.sort_values("units_per_day", ascending=True).head(top_n)
 
