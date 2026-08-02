@@ -53,7 +53,12 @@ def get_revenue_by_period(period: str = "D") -> pd.DataFrame:
     period: 'D' = daily, 'W' = weekly, 'M' = monthly
     """
     df = _load_sales_with_products()
-
+    # .resample() raises TypeError(RangeIndex) on an empty frame — guard it
+    if df.empty:
+        return pd.DataFrame(columns=[
+            "sale_date", "total_revenue", "total_cost", "total_profit",
+            "units_sold", "transactions", "profit_margin_pct",
+        ])
     grouped = df.resample(period, on="sale_date").agg(
         total_revenue   = ("revenue", "sum"),
         total_cost      = ("cost", "sum"),
