@@ -1,0 +1,38 @@
+FROM python:3.11-slim
+
+# System dependencies needed to build faiss-cpu and sentence-transformers
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libgomp1 \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Copy requirements first for Docker layer caching
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy entire project (database/faiss_index folders excluded via .dockerignore,
+# they get generated fresh below instead of relying on committed binary files)
+COPY . .
+
+# Make startup script executable
+RUN chmod +x start.sh
+
+# Environment defaults (Render dashboard env vars override these at runtime)
+ENV PYTHONPATH=/app
+ENV LLM_PROVIDER=groq
+ENV DB_PATH=/app/database/retail.db
+
+# ── Generate fresh database + FAISS index DURING the build ──────────────────
+# This runs once when the image is built, not on every container start.
+# Uses random.seed(42) internally so output is identical every build.
+RUN python database/db_manager.py
+RUN python data/generate_realistic_data.py
+RUN python rag/embedder.py
+
+# Render checks this port for health
+EXPOSE 10000
+
+CMD ["./start.sh"]

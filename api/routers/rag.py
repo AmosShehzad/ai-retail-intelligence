@@ -45,7 +45,7 @@ async def ask_question(body: RAGQueryRequest):
                 )
                 for s in result.sources
             ],
-            model    = "phi3",
+            model    = pipeline.llama.provider,
         )
 
     except HTTPException:

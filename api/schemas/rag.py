@@ -63,7 +63,7 @@ class RAGQueryResponse(BaseModel):
     question : str
     answer   : str
     sources  : List[SourceDocument] = []
-    model    : str = "phi3"
+    model    : str = "llm"
 
     class Config:
         from_attributes = True

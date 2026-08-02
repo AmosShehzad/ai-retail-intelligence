@@ -8,6 +8,7 @@ Pages:
 4. Manage Store      — Search, filter, add products, adjust stock, manage purchase orders
 """
 
+import os
 import sys
 from pathlib import Path
 # Force append parent directory to prevent absolute module path errors
@@ -1230,12 +1231,9 @@ def page_ai_assistant():
             st.session_state.rag_ready = False
 
     # Status
-    if st.session_state.rag_ready:
-        st.markdown('<span class="kpi-badge badge-up" style="font-size:0.8rem;padding:0.3rem 0.75rem;">● Online — phi3</span>', unsafe_allow_html=True)
-    else:
-        st.markdown('<span class="kpi-badge badge-down" style="font-size:0.8rem;padding:0.3rem 0.75rem;">● Offline — start Ollama</span>', unsafe_allow_html=True)
-
-    st.markdown("<br>", unsafe_allow_html=True)
+    import os
+    provider_name = "Groq (Llama 3.1)" if os.getenv("LLM_PROVIDER", "ollama").lower() == "groq" else "phi3"
+    st.markdown(f'<span class="kpi-badge badge-up" style="font-size:0.8rem;padding:0.3rem 0.75rem;">● Online — {provider_name}</span>', unsafe_allow_html=True)
 
     # ── Quick prompts ──
     section_head("Quick Actions", "zap")

@@ -242,7 +242,7 @@ class RAGPipeline:
         log.info("=" * 60)
         log.info("RAG PIPELINE READY: %s", self.ready)
         log.info("  Documents indexed : %d", len(self.retriever.documents))
-        log.info("  phi3 ready      : %s", self.llama.is_ready())
+        log.info("  %s ready : %s", self.llama.provider, self.llama.is_ready())
         log.info("=" * 60)
 
     def is_ready(self) -> bool:
