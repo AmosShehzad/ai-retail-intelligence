@@ -4,7 +4,7 @@ An AI-powered business intelligence platform built for Pakistani kiryana (corner
 
 Ask questions in plain English such as "What should I restock this week?" or "Which category makes the most money?" and get answers grounded in actual store data rather than generic advice.
 
-Live Demo: https://ai-retail-intelligence.onrender.com
+Live Demo: https://ai-retail-intelligence-4tuj.onrender.com
 (Free tier deployment — first load may take 30-60 seconds to wake up.)
 
 ---
