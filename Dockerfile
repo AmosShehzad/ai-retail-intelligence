@@ -64,4 +64,4 @@ EXPOSE 8000
 EXPOSE 8501
 
 # Default command (overridden per service in docker-compose)
-CMD ["sh", "-c", "streamlit run frontend/dashboard.py --server.port ${PORT:-8000} --server.address 0.0.0.0 --server.headless true --server.enableCORS false --server.enableXsrfProtection false"]
+CMD ["sh", "-c", "streamlit run frontend/dashboard.py --server.port ${PORT:-8000} --server.address 0.0.0.0 --server.headless true --server.fileWatcherType none --browser.gatherUsageStats false --server.enableCORS false --server.enableXsrfProtection false"]

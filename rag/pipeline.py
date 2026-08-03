@@ -441,13 +441,18 @@ class RAGPipeline:
 # PART 6: SINGLETON
 # ══════════════════════════════════════════════════════════════════════════════
 
+import threading
+
 _rag_pipeline_instance: Optional[RAGPipeline] = None
+_rag_pipeline_lock = threading.Lock()
 
 def get_rag_pipeline(force_recreate: bool = False) -> RAGPipeline:
     global _rag_pipeline_instance
 
     if _rag_pipeline_instance is None or force_recreate:
-        _rag_pipeline_instance = RAGPipeline()
+        with _rag_pipeline_lock:
+            if _rag_pipeline_instance is None or force_recreate:
+                _rag_pipeline_instance = RAGPipeline()
 
     return _rag_pipeline_instance
 
