@@ -72,7 +72,7 @@ Synthetic but realistic Pakistani retail data covering 61 products across 10 cat
 
 Requirements: Python 3.11 or later, and either an Ollama installation for local inference or a free Groq API key for cloud inference.
 
-git clone https://github.com/YOUR_USERNAME/ai-retail-intelligence.git
+git clone https://github.com/AmosShehzad/ai-retail-intelligence.git
 cd ai-retail-intelligence
 
 python -m venv venv
