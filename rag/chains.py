@@ -178,14 +178,16 @@ def route_question(question: str) -> str:
     q = question.lower()
 
     inventory_keywords = [
-        "restock", "stock", "inventory", "dead", "alert",
-        "running out", "order", "supplier", "units left",
-        "low", "shortage", "refill"
+        "restock", "re-stock", "reorder", "re-order", "stock", "inventory",
+        "dead", "alert", "running out", "order", "buy", "purchase", "supplier",
+        "units left", "low", "shortage", "refill", "what to order", "need to buy"
     ]
     analytics_keywords = [
-        "revenue", "profit", "margin", "sales", "kpi",
-        "best seller", "top product", "earning", "income",
-        "category", "performance", "money", "pkr"
+        "revenue", "profit", "margin", "sales", "kpi", "sell", "selling",
+        "sold", "best seller", "best selling", "best-selling", "bestseller",
+        "top seller", "top product", "top products", "most popular", "worst",
+        "slowest", "fastest", "earning", "income", "category", "performance",
+        "money", "pkr"
     ]
 
     if any(kw in q for kw in inventory_keywords):

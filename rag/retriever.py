@@ -63,9 +63,9 @@ RETRIEVAL_CONFIG: Dict[str, Dict[str, Any]] = {
     # FILTERED to inventory_alert docs only — a product doc about
     # Tapal Tea's price isn't useful when asking "what's low on stock"
     "inventory": {
-        "top_k"          : 4,
-        "score_threshold": 0.25,
-        "doc_type_filter": "inventory_alert",
+        "top_k"          : 6,
+        "score_threshold": 0.22,
+        "doc_type_filter": None,
     },
 
     # Analytics questions ("revenue", "margins", "best sellers")
@@ -73,8 +73,8 @@ RETRIEVAL_CONFIG: Dict[str, Dict[str, Any]] = {
     # Medium threshold — analytics language varies more than product names
     # Filtered to category + store_analytics (not individual products)
     "analytics": {
-        "top_k"          : 4,
-        "score_threshold": 0.30,
+        "top_k"          : 6,
+        "score_threshold": 0.25,
         "doc_type_filter": None,  # search category AND analytics docs
     },
 
@@ -83,16 +83,16 @@ RETRIEVAL_CONFIG: Dict[str, Dict[str, Any]] = {
     # HIGHER threshold (strict) — don't want unrelated noise when
     # the question is precise (e.g. "What is Tapal Tea's price?")
     "base": {
-        "top_k"          : 3,
-        "score_threshold": 0.35,
+        "top_k"          : 5,
+        "score_threshold": 0.28,
         "doc_type_filter": None,
     },
 }
 
 # Fallback config if route_question() returns something unexpected
 DEFAULT_CONFIG = {
-    "top_k"          : 5,
-    "score_threshold": 0.30,
+    "top_k"          : 6,
+    "score_threshold": 0.25,
     "doc_type_filter": None,
 }
 

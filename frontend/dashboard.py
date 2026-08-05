@@ -1292,19 +1292,19 @@ def page_ai_assistant():
                     unsafe_allow_html=True
                 )
 
-    if "pending_question" in st.session_state:
-        pending = st.session_state.pop("pending_question")
-        st.session_state.messages.append({"role": "user", "content": pending})
-        st.rerun()
-
+    # A question can come from a Quick Action button OR the chat box —
+    # handle both the same way so clicking a Quick Action runs the query too.
+    pending = st.session_state.pop("pending_question", None)
     user_input = st.chat_input("Ask about your store data…", key="chat_input")
-    if user_input:
-        st.session_state.messages.append({"role": "user", "content": user_input})
+    question = pending or user_input
+
+    if question:
+        st.session_state.messages.append({"role": "user", "content": question})
         with st.spinner("Computing response…"):
             if not st.session_state.rag_ready:
-                response = {"success": False, "answer": "AI assistant offline. Run 'ollama serve'.", "sources": []}
+                response = {"success": False, "answer": "AI assistant is currently offline.", "sources": []}
             else:
-                response = ask_rag(user_input)
+                response = ask_rag(question)
         st.session_state.messages.append({
             "role":            "assistant",
             "content":         response.get("answer", "Sorry, no response generated."),
