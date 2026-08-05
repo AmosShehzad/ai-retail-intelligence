@@ -4,7 +4,7 @@ An AI-powered business intelligence platform built for Pakistani kiryana (corner
 
 Ask questions in plain English such as "What should I restock this week?" or "Which category makes the most money?" and get answers grounded in actual store data rather than generic advice.
 
-Live Demo: https://ai-retail-intelligence.onrender.com
+Live Demo: https://ai-retail-intelligence-4tuj.onrender.com
 (Free tier deployment — first load may take 30-60 seconds to wake up.)
 
 ---
@@ -72,7 +72,7 @@ Synthetic but realistic Pakistani retail data covering 61 products across 10 cat
 
 Requirements: Python 3.11 or later, and either an Ollama installation for local inference or a free Groq API key for cloud inference.
 
-git clone https://github.com/YOUR_USERNAME/ai-retail-intelligence.git
+git clone https://github.com/AmosShehzad/ai-retail-intelligence.git
 cd ai-retail-intelligence
 
 python -m venv venv
