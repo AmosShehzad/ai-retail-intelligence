@@ -608,6 +608,121 @@ def _generate_store_health_insight(kpis: dict) -> str:
 # ══════════════════════════════════════════════════════════════════════════════
 # MASTER SYNTHESIZER — runs all four synthesizers
 # ══════════════════════════════════════════════════════════════════════════════
+def synthesize_ranking_documents() -> List[Document]:
+    """
+    Creates explicit RANKING / AGGREGATE documents that directly answer
+    ranking questions such as:
+      - "What is my best selling product?"  /  "What are my top sellers?"
+      - "What are my slowest / worst selling products?"
+      - "What should I restock this week?"  /  "What do I need to reorder?"
+
+    These store-wide answers do NOT exist in per-product documents, so vector
+    search could never surface them before. Each document repeats the natural
+    question wording so its embedding sits close to the user's query.
+    """
+    log.info("Synthesizing ranking / aggregate documents...")
+    documents = []
+
+    velocity = get_product_velocity(top_n=10)
+
+    # 1. Overall best-selling products -----------------------------------------
+    top = velocity["top_sellers"]
+    if not top.empty:
+        lines = []
+        for i, (_, r) in enumerate(top.iterrows(), start=1):
+            lines.append(
+                f"{i}. {r['product_name']} ({r['category']}) - "
+                f"{_fmt_float(r['units_per_day'])} units/day, "
+                f"{int(r['total_units_sold'])} units sold, "
+                f"{_fmt_price(r['total_revenue'])} revenue"
+            )
+        best = top.iloc[0]
+        top_text = (
+            "STORE-WIDE BEST SELLING PRODUCTS (Top Sellers Ranking)\n\n"
+            "Question: What is my best selling product? What are my top sellers "
+            "and best performing products?\n\n"
+            f"Answer: The single best-selling product store-wide is "
+            f"{best['product_name']} in the {best['category']} category, selling "
+            f"{_fmt_float(best['units_per_day'])} units per day "
+            f"({int(best['total_units_sold'])} units sold in total, "
+            f"{_fmt_price(best['total_revenue'])} revenue).\n\n"
+            "Full ranking of the fastest-selling products:\n" + "\n".join(lines)
+        )
+        documents.append(Document(
+            page_content=top_text,
+            metadata={
+                "doc_type"     : "ranking",
+                "ranking_type" : "top_sellers",
+                "best_product" : str(best["product_name"]),
+                "generated_at" : datetime.now().isoformat(),
+            },
+        ))
+
+    # 2. Slowest-selling / dead-stock candidates -------------------------------
+    slow = velocity["slow_movers"]
+    if not slow.empty:
+        lines = []
+        for i, (_, r) in enumerate(slow.iterrows(), start=1):
+            lines.append(
+                f"{i}. {r['product_name']} ({r['category']}) - "
+                f"{_fmt_float(r['units_per_day'])} units/day, "
+                f"only {int(r['total_units_sold'])} units sold"
+            )
+        slow_text = (
+            "STORE-WIDE SLOWEST SELLING PRODUCTS (Worst Performers / Dead Stock Candidates)\n\n"
+            "Question: What are my worst or slowest selling products? "
+            "What is not selling well?\n\n"
+            "Answer: The slowest-moving products store-wide are:\n" + "\n".join(lines)
+        )
+        documents.append(Document(
+            page_content=slow_text,
+            metadata={
+                "doc_type"     : "ranking",
+                "ranking_type" : "slow_movers",
+                "generated_at" : datetime.now().isoformat(),
+            },
+        ))
+
+    # 3. Restock recommendations (this week) -----------------------------------
+    restock = get_restock_recommendations()
+    if restock is not None and not restock.empty:
+        lines = []
+        for i, (_, r) in enumerate(restock.iterrows(), start=1):
+            lines.append(
+                f"{i}. [{r['urgency']}] {r['product_name']} ({r['category']}) - "
+                f"reorder {int(r['suggested_reorder_qty'])} units from {r['supplier']}, "
+                f"estimated cost {_fmt_price(r['estimated_reorder_cost_pkr'])} "
+                f"(current stock: {int(r['current_stock'])})"
+            )
+        total_cost = restock["estimated_reorder_cost_pkr"].sum()
+        restock_text = (
+            "RESTOCK RECOMMENDATIONS FOR THIS WEEK (Reorder / Purchase List)\n\n"
+            "Question: What should I restock this week? What do I need to reorder or buy?\n\n"
+            f"Answer: You should restock {len(restock)} product(s) this week, most "
+            f"urgent first, at an estimated total cost of {_fmt_price(total_cost)}:\n"
+            + "\n".join(lines)
+        )
+    else:
+        restock_text = (
+            "RESTOCK RECOMMENDATIONS FOR THIS WEEK (Reorder / Purchase List)\n\n"
+            "Question: What should I restock this week? What do I need to reorder or buy?\n\n"
+            "Answer: No products currently need restocking. All items are sufficiently "
+            "stocked based on current stock levels and recent sales velocity, so there "
+            "is nothing to reorder this week."
+        )
+    documents.append(Document(
+        page_content=restock_text,
+        metadata={
+            "doc_type"     : "ranking",
+            "ranking_type" : "restock",
+            "generated_at" : datetime.now().isoformat(),
+        },
+    ))
+
+    log.info("Generated %d ranking/aggregate documents.", len(documents))
+    return documents
+
+
 def run_document_synthesis(save_to_disk: bool = True) -> List[Document]:
     """
     Runs all four synthesizers and combines output.
@@ -629,11 +744,13 @@ def run_document_synthesis(save_to_disk: bool = True) -> List[Document]:
     category_docs  = synthesize_category_documents()
     inventory_docs = synthesize_inventory_documents()
     analytics_docs = synthesize_analytics_documents()
+    ranking_docs   = synthesize_ranking_documents()
 
     all_documents.extend(product_docs)
     all_documents.extend(category_docs)
     all_documents.extend(inventory_docs)
     all_documents.extend(analytics_docs)
+    all_documents.extend(ranking_docs)
 
     log.info("-" * 55)
     log.info("SYNTHESIS SUMMARY")
@@ -641,6 +758,7 @@ def run_document_synthesis(save_to_disk: bool = True) -> List[Document]:
     log.info("  Category documents  : %d", len(category_docs))
     log.info("  Inventory documents : %d", len(inventory_docs))
     log.info("  Analytics documents : %d", len(analytics_docs))
+    log.info("  Ranking documents   : %d", len(ranking_docs))
     log.info("  TOTAL               : %d", len(all_documents))
     log.info("-" * 55)
 

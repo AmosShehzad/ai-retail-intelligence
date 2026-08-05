@@ -1764,7 +1764,7 @@
       "total_revenue": 32738332.08,
       "total_profit": 7965731.08,
       "overall_margin_pct": 24.33,
-      "generated_at": "2026-08-02T14:31:51.594401"
+      "generated_at": "2026-08-05T21:30:53.696620"
     }
   },
   {
@@ -1773,7 +1773,7 @@
       "doc_type": "store_analytics",
       "analytics_type": "weekly_revenue",
       "weeks_covered": 4,
-      "generated_at": "2026-08-02T14:31:52.544567"
+      "generated_at": "2026-08-05T21:30:54.645574"
     }
   },
   {
@@ -1783,7 +1783,32 @@
       "analytics_type": "category_performance",
       "top_category": "Tea & Beverages",
       "categories_covered": 10,
-      "generated_at": "2026-08-02T14:31:53.276692"
+      "generated_at": "2026-08-05T21:30:55.513836"
+    }
+  },
+  {
+    "page_content": "STORE-WIDE BEST SELLING PRODUCTS (Top Sellers Ranking)\n\nQuestion: What is my best selling product? What are my top sellers and best performing products?\n\nAnswer: The single best-selling product store-wide is Pepsi 1.5L in the Beverages category, selling 22.73 units per day (8319 units sold in total, Rs. 1,287,535 revenue).\n\nFull ranking of the fastest-selling products:\n1. Pepsi 1.5L (Beverages) - 22.73 units/day, 8319 units sold, Rs. 1,287,535 revenue\n2. Lays Classic 34g (Snacks) - 20.44 units/day, 7482 units sold, Rs. 463,489 revenue\n3. Tapal Danedar 200g (Tea & Beverages) - 19.63 units/day, 7185 units sold, Rs. 1,688,311 revenue\n4. Knorr Chicken Noodles 66g (Instant Food) - 19.39 units/day, 7098 units sold, Rs. 568,429 revenue\n5. Shan Biryani Masala 60g (Spices & Masala) - 19.16 units/day, 7014 units sold, Rs. 687,278 revenue\n6. Coca Cola 1.5L (Beverages) - 18.99 units/day, 6951 units sold, Rs. 1,099,431 revenue\n7. Kolson Slanty 30g (Snacks) - 18.39 units/day, 6732 units sold, Rs. 437,999 revenue\n8. Knorr Masala Noodles 66g (Instant Food) - 17.65 units/day, 6459 units sold, Rs. 516,647 revenue\n9. Nestle MilkPak 1L (Dairy) - 16.98 units/day, 6213 units sold, Rs. 1,366,936 revenue\n10. Olpers Milk 1L (Dairy) - 15.47 units/day, 5661 units sold, Rs. 1,217,030 revenue",
+    "metadata": {
+      "doc_type": "ranking",
+      "ranking_type": "top_sellers",
+      "best_product": "Pepsi 1.5L",
+      "generated_at": "2026-08-05T21:30:56.947212"
+    }
+  },
+  {
+    "page_content": "STORE-WIDE SLOWEST SELLING PRODUCTS (Worst Performers / Dead Stock Candidates)\n\nQuestion: What are my worst or slowest selling products? What is not selling well?\n\nAnswer: The slowest-moving products store-wide are:\n1. Seasons Canola Oil 1L (Cooking Oil) - 2.68 units/day, only 975 units sold\n2. Dalda Banaspati 1kg (Cooking Oil) - 2.90 units/day, only 1062 units sold\n3. Sunsilk Shampoo 180ml (Personal Care) - 3.15 units/day, only 1149 units sold\n4. Nestle Milo 400g (Tea & Beverages) - 3.21 units/day, only 1173 units sold\n5. Test Product (Snacks) - 3.36 units/day, only 1228 units sold\n6. Surf Excel 1kg (Detergents) - 3.39 units/day, only 1239 units sold\n7. Nescafe Classic 50g (Tea & Beverages) - 3.52 units/day, only 1287 units sold\n8. Rooh Afza 800ml (Tea & Beverages) - 4.17 units/day, only 1512 units sold\n9. Dettol Soap 175g (Personal Care) - 4.93 units/day, only 1803 units sold\n10. Colgate Total 75ml (Personal Care) - 4.98 units/day, only 1821 units sold",
+    "metadata": {
+      "doc_type": "ranking",
+      "ranking_type": "slow_movers",
+      "generated_at": "2026-08-05T21:30:56.948391"
+    }
+  },
+  {
+    "page_content": "RESTOCK RECOMMENDATIONS FOR THIS WEEK (Reorder / Purchase List)\n\nQuestion: What should I restock this week? What do I need to reorder or buy?\n\nAnswer: No products currently need restocking. All items are sufficiently stocked based on current stock levels and recent sales velocity, so there is nothing to reorder this week.",
+    "metadata": {
+      "doc_type": "ranking",
+      "ranking_type": "restock",
+      "generated_at": "2026-08-05T21:30:57.003876"
     }
   }
 ]
