@@ -23,9 +23,13 @@ import plotly.graph_objects as go
 import pandas as pd
 from datetime import datetime
 
+from pathlib import Path
+
+_ICON = Path(__file__).parent / "favicon.png"
+
 st.set_page_config(
     page_title="AI Retail Intelligence",
-    page_icon="🏪",
+    page_icon=str(_ICON) if _ICON.exists() else "📊",
     layout="wide",
     initial_sidebar_state="expanded",
 )
